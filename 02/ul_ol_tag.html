@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ul vs ol tag</title>
+    <style> 
+        span , div {
+            border: 1px solid red ; 
+        }
+
+    </style>
+
+</head>
+<body>
+    <!--
+        ul : 순서 없는 목록 : list-style-type : disk (원), cicle (원), square(네모), none  
+        ol : 순서 있는 목록 
+
+
+        인라인 태그 : a span, img           : 옆으로 붙어서 출력되는 태그 
+        블락 태그 : div, h1 ~ h6, ul, ol    : 아래로 출력되는 태그 
+    -->
+
+    <h3> 인라인 태그 : 출력 방향이 옆으로 출력됨 : span </h3>
+    <hr align = "left" width="30%" size = "5px" color="green"> 
+
+    <span> 오늘 </span> <span> 날씨 </span> <span> 맑음 </span>
+
+    <h3> 블락 태그 : 출력 방향이 아래로 출력됨 : div </h3>
+    <hr align = "left" width="30%" size = "5px" color="green"> 
+
+    <div>오늘</div> <div> 날씨</div> <div> 맑음 </div>
+
+    <br><br> 
+    <h3> UL 태그 (disk) </h3>
+    <hr align = "left" width="30%" size = "5px" color="green">
+
+    <ul style = "list-style-type: disc;">   
+        <li> Apple </li>
+        <li> Banana </li>
+        <li> Orange</li>
+        <li> Lemon </li>
+    </ul>
+
+    <hr> 
+
+    <br><br> 
+    <h3> UL 태그(cicle) </h3>
+    <hr align = "left" width="30%" size = "5px" color="green">
+
+    <ul style = "list-style-type: circle;">   
+        <li> Apple </li>
+        <li> Banana </li>
+        <li> Orange</li>
+        <li> Lemon </li>
+    </ul>
+
+    <hr> 
+
+    <br><br> 
+    <h3> UL 태그(squre) </h3>
+    <hr align = "left" width="30%" size = "5px" color="green">
+
+    <ul style = "list-style-type: square;">   
+        <li> Apple </li>
+        <li> Banana </li>
+        <li> Orange</li>
+        <li> Lemon </li>
+    </ul>
+
+    <hr> 
+
+    <br><br> 
+    <h3> UL 태그(none) </h3>
+    <hr align = "left" width="30%" size = "5px" color="green">
+
+    <ul style = "list-style-type: none;">   
+        <li> Apple </li>
+        <li> Banana </li>
+        <li> Orange</li>
+        <li> Lemon </li>
+    </ul>
+
+    <hr size = "10px" color="red"> 
+
+    <h3> OL : 순서 있는 목록 출력 (번호) </h3>
+    <hr align = "left" width="30%" size = "5px" color="green">
+
+    <ol> 
+        <li> HTML </li>
+        <li> CSS </li>
+        <li> JavaScript </li>
+        <li> JQuery </li>
+        <li> React </li>
+    </ol>
+
+    <hr> 
+
+    <h3> OL : 순서 있는 목록 출력 (번호) : type = "1" </h3>
+    <hr align = "left" width="30%" size = "5px" color="green">
+
+    <ol type ="1"> 
+        <li> HTML </li>
+        <li> CSS </li>
+        <li> JavaScript </li>
+        <li> JQuery </li>
+        <li> React </li>
+    </ol>
+
+    <hr> 
+
+    <h3> OL : 순서 있는 목록 출력 (알파벳 대문자) : type = "A" </h3>
+    <hr align = "left" width="30%" size = "5px" color="green">
+
+    <ol type ="A"> 
+        <li> HTML </li>
+        <li> CSS </li>
+        <li> JavaScript </li>
+        <li> JQuery </li>
+        <li> React </li>
+    </ol>
+
+    <hr> 
+
+    <h3> OL : 순서 있는 목록 출력 (I) : type = "I" </h3>
+    <hr align = "left" width="30%" size = "5px" color="green">
+
+    <ol type ="I"> 
+        <li> HTML </li>
+        <li> CSS </li>
+        <li> JavaScript </li>
+        <li> JQuery </li>
+        <li> React </li>
+    </ol>
+
+
+<hr size = "10px" color="red"> 
+
+<!-- 실제 제일 많이 사용하는 유형 : 블락 ===> 인라인  -->
+<ul style = "list-style-type: none; display: inline-flex;">
+    <li>| 회원 가입 | </li>
+    <li> 로그인 | </li>
+    <li> 로그아웃 | </li>
+    <li> 회사소개 | </li>
+    <li> 약도 | </li>
+    <li> 장바구니 | </li>
+</ul>
+    
+</body>
+</html>

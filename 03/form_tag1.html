@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        form 태그 : 클라이언트의 정보를 서버에 전송하기 위한 태그 
+            - method : 서버로 보낼 형식을 지정함 (get/post) 
+                - get  : URL 마지막에 변수와 값을 넣어서 전송하는 방식 , 2048 byte까지만 전송됨 
+                        - URL 에 서버로 전송하는 변수와 값치 모두 노출 (보안에 취약), 
+                        - 게시판에서 많이 사용됨 , 
+                        - a 태그에서도 get 방식으로 많이 처리 
+                        - 보안을 처리할 필요가 없는 환경에서 사용됨 
+                        - http://127.0.0.1:5500/03/login.do?id=abcd&pass=1234
+                        - 서버주소:포트/03/login.do?변수=값&변수=값   
+
+                - post : http 헤더 앞에 변수와 값을 넣어서 전송하는 방식 , URL에서 변수와 값이 보이지 않음. 
+                        - 보안이 강하다. 주로 로그인 처리 
+                        - client 의 파일을 서버로 전송시 사용 , client ==> server 전송시 파일용량제한이 없음. 
+                        - 자료실 을 만들때 
+                        - http://127.0.0.1:5500/03/login.do   <URL에 변수와 값이 노출되지 않음> 
+
+            - action : 서버에게 호출할 요청 페이지 , 서버에게 보낼 명령 
+            - name : 변수명을 지정함.  <== JavaScript / JSP / Timeleaf / 
+                
+    -->
+
+    <h3> Form 태그 - 레이아웃 없이 작동 </h3>
+    <hr color="green"> 
+    <form name ="myForm" action="login.do" method="GET"> 
+
+        아이디 &nbsp;&nbsp;&nbsp;:   <input type = "text" name ="id" >    <br> <br> 
+        패스워드 : <input type ="password" name ="pass"> <br> <br> 
+            <input type="submit" value="전송"> 
+    </form>
+
+    <p /> 
+
+    <h3> Form 태그 - 레이아웃 (테이블) 작동 </h3>
+    <hr color="green"> 
+    <form name ="myForm2" action="login.do" method="GET"> 
+
+        <table> 
+            <tr> <td align="right">아이디 :  </td> <td> <input type = "text" name ="id2" > </td></tr>
+            <tr> <td align="right">패스워드 :  </td> <td> <input type ="password" name ="pass2"></td></tr>
+            <tr> <td> </td> <td align="center"> <input type="submit" value="전송">  </td></tr>
+
+        </table>
+    </form>
+
+    <p /> 
+
+
+
+    
+</body>
+</html>

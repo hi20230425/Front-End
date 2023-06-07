@@ -1,0 +1,25 @@
+1. VS Code 설치 : 
+     - https://code.visualstudio.com/
+
+     - 확장 프로그램 :  
+	- 한글화 
+ 	- Live Sever : port : 5500에서 <== 웹서버를 자동으로 작동시켜 줌 
+
+		http://127.0.0.1:5500   <== 웹서버를 작동시킴 
+
+		http    :  80 	<== 암호화 없는 웹서버
+		https   :  443 	<== 암호화 하는 웹서버 
+
+
+2. Frond-End : 사용자에게 보여지는 부분 (View )   : HTML/CSS/JavaScript 
+       - HTML ( 뼈대를 구성, 기둥, 뼈대  )
+       - CSS    ( 살을 붙임,     인테리어 ) 
+       - JavaScript ( 움직이고,   액션을 추가) 
+
+       - JQurey : 자바스크립트 라이브러리, <== JavaScript를 쉽게 사용 
+       - React(SPA 자바스크립트 라이브러리 ) , View (프레임워크), Aguar (x) 
+
+
+   Back-End : Controller (사용자의 요청 정보를 받아서 제어), Model (비즈니스 로직 처리) - DB (CRUD) 
+
+3. MVC ( Model, View, Controller ) : 대규모 개발 프로잭트에서 서로 분업하면서 개발을 진행 

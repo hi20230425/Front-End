@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+        /* 후손 선택자 : 공백으로 처리 됨  */ 
+        div ul {color : red; }
+        div h2 { color: yellow; background-color: purple;}
+        div li {color :blue; background-color: aqua;} 
+
+        /* 자손 선택자 :  >     부모의 직계 자손 */ 
+        body > div > h3 { color:chartreuse; }
+        body > p {color:gold; background-color: brown;}
+        body > h3 > tel > home {
+            color:aqua; 
+        }
+
+        /* 인접 형제 선택자 */ 
+        body > p + abc {
+            background-color: yellow;
+        }
+
+        /* 일반 형제 선택자 */ 
+
+        body > p ~ cde {
+            background-color: blue;
+        }
+
+        /* 그룹 선택자 */
+        .group1 , .group2 {
+            font-size: 20px;
+            background-color: rgb(5, 55, 55);
+        }
+    
+    </style>
+</head>
+<body>
+    <h3> 선택자 : 후손 (공백), 자손( > ), 인접 형제 선택자 ( + ), 일반 형제 선택자 ( ~ ), 그룹 선택자 ( , )</h3>
+    <hr color = "green"> 
+    <!--
+         후손 선택자 :    선택자A  선택자B { 스타일 적용 } <== 선택자B는 선택자A 블락 내부에 포함되어 있어야 함. 
+         자손 선택자 :    선택자A > 선택자B { 스타일 적용}  <== 선택자B는 선택자A의 직계자손 
+         인접 형제 선택자 : 선택자A + 선택자B { 스타일 적용}  <== 선택자A에 바로 인접해서 나타나는 선택자 B 
+         일반 형제 선택자 : 선택자A ~ 선택자B { 스타일 적용}  <== 선택자A에 형제 레벨의 선택자B
+         그룹 선택자 : 선택자A , 선택자B { 스타일 적용}  <== 선택자A, 선택자B를 동시에 선택 
+    -->
+
+    <!-- 후손 선택자 -->
+    <div> 
+        <h2> 후손 선택자 1 : 제목 </h2>        <!-- 자손 -->
+        <ul>        <!-- 순서 없는 목록 -->
+            <li> div의 자식의 자식 (후손1) </li>
+            <li> div의 자식의 자식 (후손2) </li>
+        </ul>
+
+
+    </div>
+
+    <h2> 후손 선택자 2 : 제목 </h2>
+
+    <!-- 자손 선택자 -->
+
+    <div> 
+        <h3> 자손 선택자 1 </h3>     <!-- div의 직계자손-->
+        <p> 자손 선택자 p </p>
+    </div>
+
+    <p> 자손 선택자 </p>
+
+    <abc> 인접 형제 선택자 </abc>
+
+    <h3> 
+        <sno>123456</sno>
+        <std>홍길동</std>
+        <tel> 
+            <office> 02-1234-5678</office>
+            <home> 010-1111-2222</home>
+        </tel>
+    </h3>
+
+    <cde> 일반 형제 선택자 </cde>
+
+    <div> 
+        <div class = "group1"> 그룹 선택자 1. </div>
+        
+    </div>
+    <div class = "group2">  그룹 선택자 2</div>
+
+
+</body>
+</html>

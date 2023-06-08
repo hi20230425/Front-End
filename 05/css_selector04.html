@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 선택자 :  id ( # 으로 호출) 선택자 </title>
+    <style> 
+        #myid {
+            color: brown;
+            font-size: large;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <h3> CSS 선택자 :  id ( # 으로 호출) 선택자</h3>
+    <hr color="green"> 
+        <!--
+        id 선택자 : 태그 내부에 id = "이름" 
+              #이름 {  스타일 적용 }
+              태그가 각각 다르더라도 id 속성이 들어간 선택자를 지정해서 스타일을 적용 
+
+    -->
+
+    <h1 id="myid"> 태그 선택자 1</h1>
+    <h2> 태그 선택자 2</h2>
+    <h3> 태그 선택자 3</h3>
+
+    <div> div 태그 1 </div>
+    <div id="myid"> div 태그 2 </div>
+
+    <span> span 태그 1 </span>
+    <span id="myid"> span 태그 2 </span>
+    
+</body>
+</html>

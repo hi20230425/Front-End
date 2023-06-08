@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 선택자 : 가상 선택자</title>
+    <style> 
+        .mydiv1 {
+            width : 200px ; height: 100px; 
+            color:blue; background-color: green;
+            opacity: 0.9;    /* 투명도 : 1 :완전 불투명, 0: 완전 투명  */ 
+        }
+        .mydiv1:hover {
+            width : 210px ; height: 110px; 
+            color:blue; background-color: green;
+            opacity: 0.5;    /* 투명도 : 1 :완전 불투명, 0: 완전 투명  */ 
+        }
+        .mydiv1:active {
+            width : 220px ; height: 120px; 
+            color:blue; background-color: green;
+            opacity: 0.3;    /* 투명도 : 1 :완전 불투명, 0: 완전 투명  */ 
+        }
+    
+    
+    </style>
+
+</head>
+<body>
+    <h3> CSS 선택자 : 가상 선택자 </h3>
+    <hr color="green"> 
+
+    <div class ="mydiv1"> 
+        가상 클래스를 이용한 애니메이션 효과 <br> 
+        마우스를 올려 주세요. 
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 선택자 : 가상 선택자</title>
+    <style> 
+        a:link {  /* 링크 : 밑줄 */ 
+            color:blue; text-decoration: none;
+        }
+        a:visited { /* 방문한 사이트 */ 
+            color : red; 
+        }
+        a:active {  /* 링크를 클릭 했을 때 */ 
+            color:aqua; 
+            font-size: 30px;
+            text-decoration: underline;
+        }
+        a:hover { /* 링크에 마우스를 올렸을때 */ 
+            color: brown;
+            text-decoration: underline;   
+        }
+
+        #mydiv:hover {    /* 마우스를 올렸을때 */ 
+            width: 500px;
+            height: 300px;
+            background-color: brown;
+            font-size: 40px;
+        }
+        #mydiv:active {   /* 클릭했을때 */ 
+            font-size: 20px;
+            width : 200px; 
+            height: 150px ;
+            background-color: green;
+        }
+    
+    </style>
+</head>
+<body>
+    <h3> CSS 선택자 : 가상 선택자</h3>
+    <hr color="green"> 
+
+    <!--
+        가상 선택자 : 웹 문서에는 보이지 않지만 동작에 영향을 주는 속성
+            태그명:액션 {        
+            }
+            a:hover{ 스타일 적용 }
+    -->
+
+    <a href = "https://www.w3schools.com" target="_blank" > W3C 웹사이트 </a> <br> <br> 
+    <a href ="http://www.google.com" target="_self"> 구글 </a> <br> <br> 
+    <a href = "../index.html" > 나의 웹사이트 (index.html) </a> <br> <br> 
+
+
+    <div id = "mydiv"> 오늘의 날씨는 흐립니다. </div>
+    <div> 오늘의 날씨는 흐립니다. </div>
+    <div> 오늘의 날씨는 흐립니다. </div>
+
+
+
+
+    
+</body>
+</html>

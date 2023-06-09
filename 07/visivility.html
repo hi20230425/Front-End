@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .v1 {
+            visibility: hidden;    /* 숨김 : 공간이 남아있음 */ 
+            border : 1px solid red; 
+        }
+        .v2 {
+            visibility: visible;
+            border : 1px solid red; 
+        }
+        .v3 {
+            display : none ;        /* 숨김 : 공간도 제거됨 */ 
+            border : 1px solid red;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <h3> visivility , display:none</h3>
+    <hr> 
+
+    <!-- 보이지 않도록 설정 : 공간이 있음 : visivility : hidden   -->
+    <div class="v1"> <img src="img/pic1.jpg" title="1번그림"> </div> 
+    <div class="v2"> <img src="img/pic1.jpg" title="2번그림"> </div>
+
+    <!-- 보이지 않도록 설정 : 공간이 없음 : display : none -->
+    <div class="v3"> <img src="img/pic1.jpg" title="3번그림"> </div>
+    <div class="v4"> <img src="img/pic1.jpg" title ="4번그림"> </div>
+    
+</body>
+</html>

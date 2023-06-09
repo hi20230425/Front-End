@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        h3 {
+            border : 1px solid red; 
+            width : 30%; 
+            margin : auto; 
+            text-align: center;
+            
+        }
+
+        div {
+            margin : 10px auto;     /* div 태그 자체를 중앙 정렬 */ 
+            width : 30%;     /* 블락 태그는 width : 100% */ 
+        }
+
+        div.none {
+            border-style: none;
+        }
+        div.hidden {
+            border-style: hidden;
+        }
+        div.dotted {
+            border-style: dotted;
+        }
+        div.dashed {
+            border-style: dashed;
+        }
+        div.solid {
+            border-style: solid;
+        }
+        div.groove {
+            border-style: groove;
+        }
+        div.ridge {
+            border-style: ridge;
+        }
+        div.double {
+            border-style: double;
+        }
+        div.inset {
+            border-style: inset;
+        }
+        div.outset {
+            border-style: outset;
+        }
+        div.mix {
+            border-style : dotted dashed solid double ; 
+    
+        }
+        div.mix2 {
+            border-top: 1px dotted red;    /* 상단 적용 */ 
+            border-right: 1px dashed yellow;
+            border-bottom: 1px solid blue;
+            border-left: 1px double green;
+    
+        }
+
+        h1.my1 {
+           
+            border-top : 3px solid green; 
+            border-bottom: 3px solid green;
+            
+            padding : 15px; 
+            width : 150px; 
+            margin : auto; 
+            text-align: center;
+        }
+
+
+    
+    </style>
+</head>
+<body>
+    <h3> 박스 테두리선 적용 </h3>
+    <br> 
+    <!--
+        border-style : solid (실선), dotted (점선) , dashed (-)....
+        border-top : 윗쪽
+        border-right : 오른쪽
+        border-bottom : 아랬쪽
+        border-left : 왼쪽
+    -->
+
+    <div class="none"> no border </div>
+    <div class="hidden"> hidden </div>
+    <div class="dotted"> dotted </div>
+    <div class="dashed"> dashed</div>
+    <div class="solid"> solid </div>
+    <div class="double"> double </div>
+    <div class="groove"> groove </div>
+    <div class="ridge"> ridge </div>
+    <div class="inset"> inset </div>
+    <div class="outset"> outset </div>
+    <div class="mix"> mix </div>
+    <div class="mix2"> mix2 </div>
+
+    <h1 class="my1"> 회사소개  </h1>
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .fdiv {
+            border : 1px solid red ;
+            width: 90%; 
+            margin: auto; 
+
+
+        }
+
+        img {
+            /* 인라인 태그  : width, height, margin, padding 모두 잘 적용됨 */
+            margin : 20px; 
+            padding : 20px; 
+            /*
+            border : 1px solid red; */   /* 디버깅 목적으로 추가 */ 
+
+            width : 300px; 
+            height: 300px; 
+
+            box-shadow: 10px 10px 30px black; 
+        }
+    
+        .shadow1 {
+            box-shadow: 10px 10px 30px black;   /* 오른쪽이동, 아래로이동,번짐정도,색상 */ 
+        }
+
+        .shadow2 {
+            box-shadow: 10px -10px 30px black;  /* 오른쪽이동, 윗쪽으로이동, 번짐정도, 색상 */
+        }
+    
+    </style>
+</head>
+<body>
+
+<div class = "fdiv">
+
+    <h3> shadow : 그리자 효과 넣기 </h3>
+    <hr> 
+    <!--
+        box-shadow: 수평 그림자(필수) | 수직 그림자(필수) | 흐림정도 | 색상  | 삽입효과 
+
+    -->
+
+
+    <img src="img/pic1.jpg" class ="shadow1"> 
+    <img src="img/pic2.jpg" class ="shadow2"> 
+    <img src="img/pic3.jpg" class ="shadow3"> 
+    
+    <img src="img/pic1.jpg" class ="shadow1"> 
+    <img src="img/pic2.jpg" class ="shadow2"> 
+    <img src="img/pic3.jpg" class ="shadow3"> 
+  
+    <img src="img/pic1.jpg" class ="shadow1"> 
+    <img src="img/pic2.jpg" class ="shadow2"> 
+    <img src="img/pic3.jpg" class ="shadow3"> 
+  
+    <img src="img/pic1.jpg" class ="shadow1"> 
+    <img src="img/pic2.jpg" class ="shadow2"> 
+    <img src="img/pic3.jpg" class ="shadow3"> 
+  
+    <img src="img/pic1.jpg" class ="shadow1"> 
+    <img src="img/pic2.jpg" class ="shadow2"> 
+    <img src="img/pic3.jpg" class ="shadow3"> 
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        #grad1 {
+            height: 70px;
+            /* background: red; */
+            background: linear-gradient(270deg, red, yellow);
+        }
+        #grad2 {
+            height: 70px;
+            background: linear-gradient(90deg, red, yellow, blue);
+        }
+        #grad3 {
+            height: 70px;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            opacity: 0.3;
+        
+        }
+    
+    </style>
+</head>
+<body>
+    <h3> 그라디언트 (liner : 선형 ): 선형 </h3>
+    <hr> 
+    <!--
+        그라디언트 : 두 색 을 연결할때 흐림으로 번지면서 색깔이 변화되도록 함. 
+            1. 번짐의 방향 :  to top   ,   0deg , 360deg 
+                             to right ,   90deg
+                             to bottom,   180deg
+                             to left  ,   270deg
+
+    -->
+
+
+    <h4> 2 색 선형 그라디언트 </h4>
+    <div id = "grad1"> </div>
+
+    <h4> 3 색 선형 그라디언트 </h4>
+    <div id = "grad2"> </div>
+
+    <h4> 7 색 선형 그라디언트 </h4>
+    <div id = "grad3"> </div>
+    
+</body>
+</html>

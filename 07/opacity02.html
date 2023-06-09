@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        div.background {
+            width : 350px; 
+            background: url(img/sky.jpg)  ;    /* div 박스내에 배경 이미지 등록 */ 
+            border: 1px solid black;
+
+            margin : auto; 
+        }
+        div.box {
+            margin : 30px ; 
+            background-color: white;
+            /* padding: 30px ;  */
+
+            opacity: 0.5;
+            
+        }
+        .box p {
+            margin : 5%; 
+            padding : 30px; 
+            font-weight: bold;
+            color: block; 
+            text-align: center;
+
+            opacity: 1 ;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <h3> opacity 를 사용해서 배경이미지를 보이도록 처리하기 </h3>
+    <hr> 
+
+    <div class="background">
+        <div class="box"> <p> HTML 5 웹프로그래밍 </p> </div>
+    </div>
+
+</body>
+</html>

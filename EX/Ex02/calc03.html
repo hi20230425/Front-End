@@ -1,0 +1,73 @@
+<!-- 남관우 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calc</title>
+    <style>
+        .container {
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 300px;
+            height: 380px;
+            background-color: #000;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .container div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 55px;
+            height: 55px;
+            margin: 10px;
+            border-radius: 50%;
+            background-color: #383838;
+        }
+        .container > .zero {
+            width: 122px;
+            border-top-left-radius: 20% 50%;
+            border-top-right-radius: 20% 50%;
+            border-bottom-left-radius: 20% 50%;
+            border-bottom-right-radius: 20% 50%;
+            justify-content: flex-start;
+        }
+        .container > .top {
+            background-color: #a1a1a1;
+            color: #000;
+        }
+        .container > .operator {
+            background-color: #fa7c14;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+                <div class="top">AC</div>
+                <div class="top"><sup>+</sup>/<sub>-</sub></div>
+                <div class="top">％</div>
+                <div class="operator">÷</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div class="operator">×</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div class="operator">－</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div class="operator">＋</div>
+                <div class="zero">&emsp;0</div>
+                <div>.</div>
+                <div class="operator">＝</div>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

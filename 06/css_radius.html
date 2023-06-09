@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        body {
+            font-weight: bold;
+            font-size: 12pt;
+        }
+        h1 {
+            font-size: 30px;
+        }
+
+        h1.br1 { 
+            background-color: lime;
+            color:red; 
+
+            /* border : 1px solid green ; */
+
+            border-style: solid;     /* 상하좌우 , 실선 */
+            border-width: 5px;
+            border-color: green; 
+
+            border-radius: 30% ;      /* 모서리를 둥글게 처리 */ 
+
+            width : 30%;              /* 박스의 전체 크기 */ 
+            text-align: center;
+
+            margin : auto; 
+        }
+        h1.br2 {
+           
+            border : 3px dotted brown; 
+            width : 30% ; 
+            margin : 30px auto ; 
+            background-color: yellow;
+
+            border-radius: 15px 30px;     /* 오른쪽 상단 , 왼쪽 하단 */ 
+        }
+        h1.br3 {
+            border : 3px dashed yellowgreen;  
+            width : 30%; 
+            margin: auto;
+            background-color: blueviolet;
+
+            border-top-right-radius: 30px ;
+            text-align: center;
+        }
+        h1.br4 {
+            border: 3px solid red;
+            width : 30% ; 
+            margin : 30px auto; 
+            text-align: center;
+
+            border-top-left-radius: 30px;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <h3> radius 샘플 </h3>
+    <hr> 
+    <!--
+        박스의 네 모서리를 둥글게 처리함. 
+        radius : 
+            - border-top-left-radius : 
+            - border-top-right-radius : 
+            - border-bottom-left-radius : 
+            - border-bottom-right-radius : 
+
+    -->
+
+    <h1 class="br1"> 둥근 모서리 스타일 예제 1 </h1>
+    <h1 class="br2"> 둥근 모서리 스타일 예제 2 </h1>
+    <h1 class="br3"> 둥근 모서리 스타일 예제 3 </h1>
+    <h1 class="br4"> 둥근 모서리 스타일 예제 4 </h1>
+
+</body>
+</html>

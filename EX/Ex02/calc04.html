@@ -1,0 +1,120 @@
+<!-- 배윤현 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+.wrapper {
+  width: 790px;
+  height: 790px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.calculator {
+  background-color: black;
+  
+  padding: 150px;
+  align-items: center;
+  
+  border-radius: 10px;
+}
+.calculator input {
+  border: 0;
+  outline: 0;
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  
+  background: rgb(71, 71, 71);
+  font-size: 40px;
+  
+  margin: 10px;
+  color: white;
+}
+.calculator input.zero{
+    border: 0;
+   outline: 0;
+    font-size: 40px;
+    width: 210px;
+  height: 90px;
+  border-radius: 45px; 
+  margin: 10px;
+  background: rgb(71, 71, 71);
+}
+.calculator input.AC{
+    border: 0;
+   outline: 0;
+    font-size: 35px;
+    width: 90px;
+  height: 90px;
+  border-radius: 45px; 
+  margin: 10px;
+  background: rgb(206, 193, 193);
+  color: black;
+  
+}
+
+.calculator input.equal {
+    border: 0;
+   outline: 0;
+    font-size: 40px;
+    width: 90px;
+  height: 90px;
+  border-radius: 45px; 
+  margin: 10px;
+  background: rgb(240, 167, 10);
+
+ 
+}
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="calculator">
+          <div class="display">
+            
+          </div>
+          <div>
+            <input type="button" value="AC" class="AC">
+            <input type="button" value="+/-" class = "AC">
+            <input type="button" value="%" class ="AC">
+            <input type="button" id="operator" value="÷" class="equal">
+          </div>
+          <div>
+            <input type="button" value="7">
+            <input type="button" value="8">
+            <input type="button" value="9">
+            <input type="button" id="operator" value="×" class="equal">
+          </div>
+          <div>
+            <input type="button" value="4">
+            <input type="button" value="5">
+            <input type="button" value="6">
+            <input type="button" id="operator" value="-" class="equal">
+          </div>
+          <div>
+            <input type="button" value="1">
+            <input type="button" value="2">
+            <input type="button" value="3">
+            <input type="button" id="operator" value="+" class="equal">
+          </div>
+          <div>
+            <input type="button" value="0" class ="zero">
+            <input type="button" value=".">
+            <input type="button" id="operator" value="=" class="equal">
+          </div>
+        </div>
+      </div>
+    
+</body>
+</html>

@@ -15,7 +15,7 @@
 
         .menu {
             width : 800px; 
-            border: 1px solid red; 
+            /* border: 1px solid red;  */
             overflow:hidden ; 
             margin: 150px auto ;       /* 중앙에 정렬 */ 
         }
@@ -24,13 +24,48 @@
             width : 20%;       /* 20% * 5 = 100%  (800px) */ 
             float : left; 
             text-align : center; 
-            line-height: 40px;
+            line-height: 40px;                  /* 라인과 라인의 간격 */
             background-color: #5778ff;
+
+            border-radius: 25px;
         }
+
+        /* 링크 파일의 글자색을 흰색으로 처리: 후손 선택자  */ 
+
+        .menu a {
+            color: white;
+        }
+
+        .submenu > li {
+            line-height: 50px;
+            background-color: #94a9ff;
+        }
+
+        /* 기본 출력시 submenu는 화면에서 출력되면 안됨  */ 
+        .submenu {
+            /* 높이가 0 이므로 출력되지 않음 */ 
+            height : 0;          
+             /* 화면에 출력되지 않도록 한다. */ 
+            /* display : none;     */
+            /* visibility: visible; */
+            overflow: hidden;            /* 범위를 벗어나는 부분을 보이지 않도록 처리 */ 
+        }
+
+        .menu > li:hover {
+            background-color: #94a9ff;
+            transition: 2s;
+        }
+        .menu > li:hover .submenu {
+            height: 250px;
+            /* visibility: visible; */
+            transform: 2s;
+        }
+
+
 
         /*   기본적인 태그의 margin , padding을 확인  */
         body {
-            border : 1px solid red; 
+            /* border : 1px solid red;  */
         }
         /*
         li {

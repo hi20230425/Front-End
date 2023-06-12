@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        div {
+            width : 100px; 
+            height: 100px;
+            border: 1px solid red;
+            background-color: aquamarine ; 
+            margin: 50px;
+        }
+
+        #box1 {
+            /* width : 300px; 
+            height: 300px;  */
+
+            transform: scale(0.5, 0.5);      /* 크기를 확대, 축소 */ 
+            border-radius: 50px;
+        }
+        #box2 {
+            transform: scale(2, 1.5);        /* width : 2배, height: 1.5배 */ 
+        }
+    
+    </style>
+
+</head>
+<body>
+    <h3> 크기 변환 하기 : tranform : scale </h3>
+    <br> 
+
+    <div> 기본 박스</div>
+    <div id = "box1"> 박스 1 (0.5배 축소)</div>
+    <div id = "box2"> 박스 2 (가로 2배, 세로 1.5 배 확대 )</div>
+    
+</body>
+</html>

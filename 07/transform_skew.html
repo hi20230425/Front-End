@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        div {
+            width: 100px ; 
+            height : 100px; 
+            border: 1px solid red; 
+            margin : 30px ;
+            background-color: yellowgreen;
+        }
+        #box1 {
+            transform: skew(50deg);
+        }
+        #box2 {
+            transform: skew(-30deg);
+        }
+        #box3 {
+            transform: skew(20deg , 10deg);    /* X축 기울기 20도 , Y축 기울기 10도 */ 
+        }
+    
+    </style>
+</head>
+<body>
+    <h3> 기울기 변화 : transform : skew </h3>
+    <hr> 
+
+    <div> 기본 박스</div>
+    <div id = "box1"> 박스 1 (50도 기울기)</div>
+    <div id = "box2"> 박스 2 (-30도 기울기)</div>
+    <div id = "box3"> 박스 2 (0도 기울기)</div>
+    
+</body>
+</html>

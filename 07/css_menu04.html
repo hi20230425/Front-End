@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        header {
+
+            /* position : fixed       <== 좌측 상단의 [ 0 ,0 ]
+                   - left : 위치 
+                   - top  : 위치 
+
+                   - right : 0 ;     <== 오른쪽으로 배율을 늘림 
+            */ 
+
+            position: fixed;
+            left: 20px;
+            top : 20px; 
+
+            right : 20px ;      /* 배율을 오른쪽으로 늘림 */ 
+
+
+            height: 75px;
+            padding: 1rem;   
+            color: white;
+            background-color: teal;
+            font-weight: bold;
+
+            display : flex; 
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        body,html {
+            height:300%;        /* 스크롤을 처리하기 위한 높이를 처리 % */  
+        }
+
+        main{
+            margin-left: 20px;
+            margin-top: 150px;
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- 최상단 header에서 스크롤에 의해서 움직이지 않고 고정된 메뉴 : position : fixed -->
+ 
+    <header>  <!-- 최상단의 메뉴 구성 부분-->
+        <h1> 회사로고</h1>
+        <nav> 
+            <span> 메뉴 1 </span>
+            <span> 메뉴 2 </span>
+            <span> 메뉴 3 </span>
+        </nav>
+    </header>
+
+    <main> <!-- 메뉴의 내용이 출력되는 부분 -->
+        <p> 메인 내용 출력 1 </p>
+        <p> 메인 내용 출력 2 </p>
+        <p> 메인 내용 출력 3 </p>
+        <p> 메인 내용 출력 4 </p>
+        <p> 메인 내용 출력 5 </p>
+        <p> 메인 내용 출력 6 </p>
+        <p> 메인 내용 출력 7 </p>
+        <p> 메인 내용 출력 8 </p>
+        <p> 메인 내용 출력 9 </p>
+        <p> 메인 내용 출력 10 </p>
+
+    </main>
+
+
+
+</body>
+</html>

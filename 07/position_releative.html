@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        * {
+            margin : 0; padding : 0; 
+        }
+        #parent {
+            width : 500px; 
+            height : 300px; 
+            border : 5px solid black; 
+            margin : 50px 0 0 50px ;         /* top  right bottom left */ 
+        }
+        #box1 , #box2, #box3 {
+            width : 80px; 
+            height: 80px; 
+        }
+        #box1 {background-color: red;}
+        #box2 {background-color: green;
+                position: relative;  
+                top:20px; 
+                left: 30px;   
+        }
+        #box3 {background-color: yellow;}
+
+    </style>
+
+</head>
+<body>
+    <!--
+        position : relative    : 기준점 : 원래의 자신의 위치 , left : , top :  
+                        <== 자신의 자리는 그대로 유지됨 
+                   absolute
+                   fixed 
+
+    -->
+    <div id="parent"> 
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+    </div>
+    
+</body>
+</html>

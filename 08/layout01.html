@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+        * { 
+            margin : 0 ; padding : 0; 
+            
+        }
+
+        header {
+            width : 800px ; 
+            height : 60px ; 
+            margin: 2px; 
+            border : 1px solid red; 
+        }
+        aside {
+            width : 175px ; 
+            height : 398px ;       /* height 는 컨텐츠 내용에 따라사 자동으로 늘어나도록 처리 */ 
+            border : 1px solid red; 
+            margin: 2px; 
+            float : left; 
+        }
+        main {
+
+            width : 800px ; 
+            height: 400px ;
+            margin: 2px;
+            border : 1px solid red; 
+        }
+        footer {
+            width : 800px ; 
+            height : 150px ; 
+            border : 1px solid red; 
+            margin: 2px;
+        }
+        section {
+           
+            border : 1px solid blue; 
+            width : 500px ; 
+            height: 150px; 
+            margin : 2px; 
+            margin-left: 200px;
+
+        }
+
+
+    
+    </style>
+
+
+
+</head>
+<body>
+    <!-- 
+        layout : 한 페이지를 블락을 나누어서 처리 
+            - header : 최상단, 회사로고, 메뉴 , <<모든 페이지에서 적용>>
+                    - jsp : 별도의 파일을 만들고 include 를 사용해서 처리 
+                    - thymeleaf : layout 으로 처리 
+                    - React : 컴포넌트로 처리 
+            - main   : 컨텐츠 내용 
+            - footer : 최하단, 회사주소, 전화번호, 사업자 등록 번호 <<모든 페이지에서 적용>>
+
+            - aside : 왼쪽, 오른쪽 의  추가적인 메뉴 
+            - nav   :  메뉴 를 처리  (검색 엔진에서 노출 쉽게됨 )
+            - section : 컨턴츠의 블락을 만듬 
+            - article : 작은 컨텐츠 
+    -->
+
+    <header> 
+        상단 헤더 
+        <nav> 
+            상단 메뉴 
+        </nav>
+    </header>
+
+    <main> 
+
+    <aside> 
+        <nav>
+             좌측 메뉴 
+        </nav>
+    </aside>
+
+
+        메인 컨텐츠 
+        <section> 
+            컨텐츠 1
+        </section>
+        <section> 
+            컨텐츠 2 
+        </section>
+    </main>
+
+    <footer> 
+        푸터 
+    </footer>
+    
+</body>
+</html>

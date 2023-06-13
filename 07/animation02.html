@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        div {
+            width : 100px; 
+            height: 100px;
+            background-color: red;
+            position: relative;
+
+            animation: colorbox 5s infinite alternate;
+
+        }
+
+        @keyframes colorbox {
+            from {left : 0px ; background-color: red; top:0px; }
+            25% {left : 300px ; background-color: orange; top:0px; }
+            50% {left : 300px ; background-color: yellow; top:300px; }
+            75% {left : 0px ; background-color: green; top:300px; }
+            to {left : 0 px ; background-color: red; top:0; }
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- 키프레임을 여러개로 설정 -->
+    <div> div 박스 </div>
+
+    
+</body>
+</html>

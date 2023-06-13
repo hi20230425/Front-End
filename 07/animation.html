@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        div {
+            width : 100px; 
+            height: 100px;
+            background-color: red;
+            position: relative;
+            /* left: 300px ; 
+            top : 500px;  */
+
+            animation: boxmove 5s linear infinite alternate;
+            /*         키프레임  5초  함수  무한반복   왔다갔다(정방향, 반대방향)     */ 
+
+        }
+        /* keyframes  이름 */ 
+        @keyframes boxmove {
+            from { left : 0px ; }      /* 시작점  */ 
+            to { left : 300px }      /* 종료점 */ 
+        }
+    
+    
+    </style>
+</head>
+<body>
+
+    <div> 애니메이션 박스 </div>
+    <p> 참고 : IE 9 이하 버젼에서는 작동 되지 않습니다. </p>
+    
+</body>
+</html>

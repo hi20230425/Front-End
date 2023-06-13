@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div#warp {
+            width : 90%; 
+            /* div 박스 자체 중앙 배치 */ 
+            margin :  0 auto ;      /* div 자체를 중앙에 배치 */ 
+            border: 1px solid red; 
+
+            /* div 박스 내부의 아이템의 배치 */ 
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+
+        }
+
+        header,
+        main,
+        footer {
+          
+            height: 80px;
+            background-color: aqua;
+        }
+
+        main {
+            height: 600px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        넓이 : % , em (배율) 을 사용하면 반응형으로 작동됨 
+    -->
+    <div id="warp">
+        <header>
+            헤더 컨텐츠
+        </header>
+
+        <main>
+            메인 컨텐츠
+        </main>
+
+        <footer>
+            푸터 컨텐츠
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        @keyframes bounce {
+            from , to {          /* from : 시작점,  to : 종료점  */ 
+                bottom: 0 ;      /* 브라우져의 최하단 */ 
+                animation-timing-function: ease-out;
+            }
+
+            50% {
+                bottom: 200px ; 
+                animation-timing-function: ease-in;
+            }
+        }
+
+        div {
+            width : 20px; 
+            height: 20px;
+            border-radius: 10px; 
+            border: 1px solid red;
+
+            position : fixed;       /* 스크롤을 내리더라도 위치 항상 고정 */ 
+
+            animation: bounce infinite;       /* 무한 반복 */ 
+            opacity: 0.7;
+            
+        }
+        /*      왼쪽 하단에 작동 
+        #b1 { left: 10px; background-color: red; animation-duration: 5s; }
+        #b2 { left: 50px; background-color: blue;  animation-duration: 10s;}
+        #b3 { left: 90px; background-color: green;  animation-duration: 3s;}
+        #b4 { left: 130px; background-color: silver;  animation-duration: 8s;}
+        #b5 { left: 170px; background-color: black;  animation-duration: 1s;}
+        */
+
+        #b1 { right: 10px; background-color: red; animation-duration: 5s; }
+        #b2 { right: 50px; background-color: blue;  animation-duration: 10s;}
+        #b3 { right: 90px; background-color: green;  animation-duration: 3s;}
+        #b4 { right: 130px; background-color: silver;  animation-duration: 8s;}
+        #b5 { right: 170px; background-color: black;  animation-duration: 1s;}
+
+        body, html {
+            height: 300% ; 
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="b1"> </div>
+    <div id="b2"> </div>
+    <div id="b3"> </div>
+    <div id="b4"> </div>
+    <div id="b5"> </div>
+</body>
+</html>

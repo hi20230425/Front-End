@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX03</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        body {
+            width: 100%;
+            margin: 0 auto;
+            font-family: "맑은 고딕";
+        }
+        /**/
+        h1 {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            height: 70px;
+            line-height: 70px;
+        }
+        nav {
+            background-color: rgb(172, 173, 248);
+            /* text-align: center; */
+            line-height: 20px;
+            font-weight: bold;
+            padding: 15px;
+        }
+        nav li{
+            float: left;
+            color: white;
+            text-align: center;
+            list-style: none;
+        }
+        /**/
+        main {
+            background-color: rgb(226, 237, 241);
+        }
+        main #s1 {
+            padding: 30px 0 30px 0;
+        }
+        main h2 {
+            text-align: center;
+            margin: 0 0 30px 0;
+        }
+        main table {
+            width: 80%;
+            text-align: center;
+            margin: 0 auto;
+            border: 1px solid #bbbbbb;
+            font-weight: bold;
+        }
+        main table td {
+            border: 1px solid #bbbbbb;
+        }
+        main table .left {
+            text-align: left;
+        }
+        main table input {
+            border: 1px solid #bbbbbb;
+            border-radius: 5px;
+        }
+
+        /**/
+        footer {
+            /* height: 40px; */
+            text-align: center;
+            /* line-height: 30px; */
+            color: white;
+            background: linear-gradient(45deg, blue, skyblue);
+            padding: 10px;
+        }
+
+
+        /* width(100%)를 %단위로 12등분(그리드)을 한 CSS 셋팅 */
+        .c1 {width: 8.33%; float: left; }
+        .c2 {width: 16.66%; float: left; }
+        .c3 {width: 25%; float: left; }
+        .c4 {width: 33.33%; float: left; }
+        .c5 {width: 41.66%; float: left; }
+        .c6 {width: 50%; float: left; }
+        .c7 {width: 58.33%; float: left; }
+        .c8 {width: 66.66%; float: left; }
+        .c9 {width: 75%; float: left; }
+        .c10 {width: 83.33%; float: left; }
+        .c11 {width: 91.66%; float: left; }
+        .c12 {width: 100%; float: left; }
+
+        @media only screen and (max-width: 768px) {
+            [class*= "c" ] {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="c12">
+        <h1 class="c12">쇼핑몰 회원관리 VER 1.0</h1>
+    
+        <nav class="c12">
+            <ul class="c12">
+                <li class="c3">회원등록</li>
+                <li class="c3">회원목록조회/수정</li>
+                <li class="c3">회원매출조회</li>
+                <li class="c3">홈으로</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="c12">
+        <section id="s1">
+        <h2>쇼핑몰 회원 등록</h2>
+            <table>
+                <tr>
+                    <td>회원번호(자동발생)</td>
+                    <td class="left"><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>회원성명</td>
+                    <td class="left"><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>회원주소</td>
+                    <td class="left"><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>가입일자</td>
+                    <td class="left"><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>고객등급[A:VIP,B:일반,C:직원]</td>
+                    <td class="left"><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>도시코드</td>
+                    <td class="left"><input type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button>등록</button>
+                                    <button>조회</button></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer class="c12">
+        <p>HRDKOREA Copyright@2016 All rights reserve. Human Resources Development Service of Korea</p>
+    </footer>
+
+
+
+</body>
+</html>

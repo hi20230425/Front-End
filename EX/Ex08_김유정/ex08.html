@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAYUN ART</title>
+    <style>
+        body {
+            background-color: rgb(242, 240, 240);
+        }
+        img {
+            float: left;
+        }
+        header {
+            width: 100%;
+            height: 100px;
+        }
+        .top {  /* 해더 로고, 검색 부분 */
+            font-size: 17px;
+            width: 97%;
+            position: absolute;
+            top: 65px;
+            text-align: right;
+        }
+        .search { /* 검색창 */
+            float: left;
+            width: 50%;
+        }
+        .search_line { /* 검색밑줄 */
+            color: rgb(194, 194, 194);
+        }
+        .search_icon {
+            float: none;
+            width: 20px;
+            height: 20px;
+        }
+        .top_right { /* 로그인, 회원가입 ... */
+            float: left;
+            width: 47%;
+        }
+        nav {  /* 상단 메뉴 부분 */
+            width: 100%;
+            height: 50px;
+            background-color: rgb(65, 65, 65);
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            color: rgb(231, 231, 231);
+        }
+        .block { /* 상단 메뉴 간격만들기 */
+            color: rgba(240, 248, 255, 0);
+        }
+        a { /* 장바구니와 이미지 클릭 했을 때 반응X */
+            color: rgb(231, 231, 231);
+            text-decoration-line: none;
+        }
+        .category {
+            margin-top: 20px;
+            float: left;
+            width: 31%;
+            height: 500px;
+        }
+        td {
+            border: 1px solid ;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+        }
+        td.category_item {
+            color: rgb(231, 231, 231);
+            background-color: rgb(157, 199, 60);
+            text-align: center;
+            width: 300px;
+            height: 35px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        .category_menu {
+            border-color: rgb(168, 168, 168);
+            text-align: right 5px;
+            height: 36.5px;
+            font-size: 15px;
+            color: rgb(109, 109, 109);
+            font-weight: 600;
+        }
+        .main_img_area {
+            margin-top: 20px;
+            float: left;
+            width: 37%;
+            height: 500px;
+            
+        }
+        .notice_area {
+            margin-top: 20px;
+            float: left;
+            width: 28%;
+            height: 245px;
+        }
+        .event_area {
+            margin-top: 8px;
+            margin-right: 69.4px;
+            float: right;
+            width: 28%;
+            height: 245px;
+        }
+        .special_area {
+            float: left;
+            width: 45.2%;
+            height: 400px;
+            margin-top: 20px;
+            margin-left: 280px;
+        }
+        .banner {
+            float: left;
+            width: 27.3%;
+            height: 400px;
+            margin-top: 20px;
+        }
+        .new_arrival { /* 신규 상품 */
+            width: 1250px;
+            height: 750px;
+            float: left;
+            margin-left: 330px;
+            margin-top: 10px;
+        }
+        .new1, .new2, .new3, .new4, .new5, .new6, .new7, .new8 {
+            float: left;
+            margin-top: 10px;
+            width: 270px;
+            height: 270px;
+        }
+        .new2, .new3, .new4 {
+            margin-left: 54px;
+        }
+        .new5 {
+            margin-top: 70px;
+        }
+        .new6, .new7, .new8 {
+            margin-top: 70px;
+            margin-left: 54px;
+        }
+        .new1-1, .new2-1, .new3-1, .new4-1 {
+            float: left;
+            margin-left: 40px;
+            text-align: center;
+        }
+        .new5-1, .new6-1, .new7-1, .new8-1 {
+            float: left;
+            margin-left: 40px;
+            text-align: center;
+        }
+        .main_title {
+            color: rgb(171, 203, 95);
+        }
+        .title {
+            color: rgb(171, 203, 95);
+        }
+        .content {
+            color: gray;
+        }
+        .price {
+            color: black;
+        }
+        .footer1{
+            margin-top: 1702px;
+            height: 50px;
+            position : relative;
+            background-color: rgb(65, 65, 65);
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            color: rgb(231, 231, 231);
+        }
+        .footer2{
+            margin-left: 430px;
+            margin-right: 430px;
+            height: 200px;
+            position : relative;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img style=" width: 220px; height: 50px; margin-top: 40px; margin-left: 300px;" src="../EX/Ex08/img/logo.gif">
+        <div class="top">
+            <div class="search">
+                <span style="color: rgb(171, 203, 95)">SEARCH</span> <ins class="search_line">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</ins>
+                <img class="search_icon" src="../EX/Ex08/img/btn_search.gif">
+            </div>
+            <div class="top_right">
+                <span style="color: rgb(171, 203, 95)">로그인 &nbsp; 회원가입</span> &nbsp; <span style="color: rgb(122, 122, 122)">마이페이지 &nbsp; 이용안내 &nbsp; 고객센터</span>
+            </div>
+        </div>
+    </header>
+    <nav>
+        상세 페이지 <span class="block" style="letter-spacing: 6em;">1</span> <a href="http://127.0.0.1:5500/test/ex08-2.html">장바구니</a> <span class="block" style="letter-spacing: 6em;">1</span> 고객 갤러리 <span class="block" style="letter-spacing: 6em;">1</span> 주문배송 <span class="block" style="letter-spacing: 6em;">1</span> 자주 하는 질문
+    </nav>
+    <main>
+        <!-- 상단 -->
+        <div class="category">
+            <table style="margin-left: 280px;">
+                <tr>
+                    <td class="category_item">CATEGORY ITEM</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;생활 아트</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;캔버스 아트</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;사진 벽지</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;창문형/현관문형</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;포인트 벽지</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;세계지도</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;엔티크 세계지도 벽지</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;입체 세계지도 벽지</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;어린이방 세계지도</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;족자형 롤스크린</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;맞춤제작 결재창</td>
+                </tr>
+            </table>
+        </div>
+        <div class="main_img_area">
+            <img style="width: 700px; height: 495px;" src="../EX/Ex08/img/main_img.gif">
+        </div>
+        <div class="notice_area">
+            <img style=" display:block; position:absolute; z-index: 1; height: 245px;" src="../EX/Ex08/img/latest_notice.gif">
+            <img style="position:absolute; z-index: 2; width: 10px; height: 10px; margin-top: 64px; margin-left: 10px;" src="../EX/Ex08/img/blue_dot.gif">
+            <img style="position:absolute; z-index: 3; width: 10px; height: 10px; margin-top: 94px; margin-left: 10px;" src="../EX/Ex08/img/blue_dot.gif">
+            <img style="position:absolute; z-index: 4; width: 10px; height: 10px; margin-top: 124px; margin-left: 10px;" src="../EX/Ex08/img/blue_dot.gif">
+            <img style="position:absolute; z-index: 5; width: 10px; height: 10px; margin-top: 154px; margin-left: 10px;" src="../EX/Ex08/img/blue_dot.gif">
+            <img style="position:absolute; z-index: 6; width: 10px; height: 10px; margin-top: 184px; margin-left: 10px;" src="../EX/Ex08/img/blue_dot.gif">
+            <img style="position:absolute; z-index: 7; width: 10px; height: 10px; margin-top: 214px; margin-left: 10px;" src="../EX/Ex08/img/blue_dot.gif">
+        </div>
+        <div style="position:absolute; margin-top: 70px; margin-left: 1320px; font-size: 13px; z-index: 8;">
+            <p>폭설로 인한 배송지연 안내</p>
+            <p>폭설로 인한 배송지연 안내</p>
+            <p>폭설로 인한 배송지연 안내</p>
+            <p>폭설로 인한 배송지연 안내</p>
+            <p>폭설로 인한 배송지연 안내</p>
+            <p>폭설로 인한 배송지연 안내</p>
+        </div>
+        <div class="event_area">
+            <img style=" display:block; position:absolute; z-index: 1; width: 363px; height: 245px;" src="../EX/Ex08/img/week_event.gif">
+            <img style=" margin-top: 70px; margin-left: 40px; position:absolute; z-index: 2; width: 280px;" src="../EX/Ex08/img/week_event_img.gif">
+        </div>
+        <!-- 중간 -->
+        <div class="special_area">
+            <img style="display:block; position:absolute; z-index: 1; width: 850px; height: 400px;" src="../EX/Ex08/img/special_shop.gif">
+            <img style="display:block; position:absolute; z-index: 2; margin-top: 60px; width: 350px; height: 330px; margin-left: 60px;" src="../EX/Ex08/img/special_img1.gif">
+            <img style="display:block; position:absolute; z-index: 3; margin-top: 60px; width: 350px; height: 330px; margin-left: 460px;" src="../EX/Ex08/img/special_img2.gif">
+        </div>
+        <div class="banner">
+            <img style="display:block; position:absolute; z-index: 1; width: 500px; height: 130px" src="../EX/Ex08/img/landscape.gif">
+            <img style="display:block; position:absolute; z-index: 2; height: 120px; margin-left: 190px; margin-top: 3.5px;" src="../EX/Ex08/img/landscape_img1.gif">
+            <img style="display:block; position:absolute; z-index: 2; height: 120px; margin-left: 325px; margin-top: 3.5px;" src="../EX/Ex08/img/landscape_img2.gif">
+            <img style="display:block; position:absolute; z-index: 1; width: 500px; margin-top: 135px; height: 130px;" src="../EX/Ex08/img/point_wallpaper.gif">
+            <img style="display:block; position:absolute; z-index: 2; height: 120px; margin-left: 190px; margin-top: 139px;" src="../EX/Ex08/img/point_wallpaper_img1.gif">
+            <img style="display:block; position:absolute; z-index: 2; height: 120px; margin-left: 325px; margin-top: 139px;" src="../EX/Ex08/img/point_wallpaper_img2.gif">
+            <img style="display:block; position:absolute; z-index: 1; width: 500px; margin-top: 270px; height: 130px;" src="../EX/Ex08/img/children.gif">
+            <img style="display:block; position:absolute; z-index: 2; height: 120px; margin-left: 190px; margin-top: 275.5px;" src="../EX/Ex08/img/children_img1.gif">
+            <img style="display:block; position:absolute; z-index: 2; height: 120px; margin-left: 325px; margin-top: 275.5px;" src="../EX/Ex08/img/children_img2.gif">
+        </div>
+        <div class="new_arrival">
+            <div>
+                <span class="main_title">NEW ARRIVAL</span> 신규 상품
+            </div>
+            <div class="new1">
+                <img style="width: 270px; height: 270px;" src="../EX/Ex08/img/new_01.jpg">
+                <div class="new1-1">
+                    <span class="title">맞춤제작(풍경)</span><br>
+                    <span class="content">원하는 사이즈로 제작 가능</span><br>
+                    <span class="price">20,000원</span><br>
+                </div>
+            </div>
+            <div class="new2">
+                <img style="width: 270px; height: 270px;" src="../EX/Ex08/img/new_02.jpg">
+                <div class="new2-1">
+                    <span class="title">맞춤제작(풍경)</span><br>
+                    <span class="content">원하는 사이즈로 제작 가능</span><br>
+                    <span class="price">20,000원</span><br>
+                </div>
+            </div>
+            <div class="new3">
+                <img style="width: 270px; height: 270px;" src="../EX/Ex08/img/new_03.jpg">
+                <div class="new3-1">
+                    <span class="title">맞춤제작(풍경)</span><br>
+                    <span class="content">원하는 사이즈로 제작 가능</span><br>
+                    <span class="price">20,000원</span><br>
+                </div>
+            </div>
+            <div class="new4">
+                <a href="http://127.0.0.1:5500/test/ex08-2.html"><img style="width: 270px; height: 270px;" src="../EX/Ex08/img/new_04.jpg"></a>
+                <div class="new4-1">
+                    <span class="title">맞춤제작(풍경)</span><br>
+                    <span class="content">원하는 사이즈로 제작 가능</span><br>
+                    <span class="price">20,000원</span><br>
+                </div>
+            </div>
+            <div class="new5">
+                <img style="width: 270px; height: 270px;" src="../EX/Ex08/img/new_05.jpg">
+                <div class="new5-1">
+                    <span class="title">맞춤제작(풍경)</span><br>
+                    <span class="content">원하는 사이즈로 제작 가능</span><br>
+                    <span class="price">20,000원</span><br>
+                </div>
+            </div>
+            <div class="new6">
+                <img style="width: 270px; height: 270px;" src="../EX/Ex08/img/new_06.jpg">
+                <div class="new6-1">
+                    <span class="title">맞춤제작(풍경)</span><br>
+                    <span class="content">원하는 사이즈로 제작 가능</span><br>
+                    <span class="price">20,000원</span><br>
+                </div>
+            </div>
+            <div class="new7">
+                <img style="width: 270px; height: 270px;" src="../EX/Ex08/img/new_07.jpg">
+                <div class="new7-1">
+                    <span class="title">맞춤제작(풍경)</span><br>
+                    <span class="content">원하는 사이즈로 제작 가능</span><br>
+                    <span class="price">20,000원</span><br>
+                </div>
+            </div>
+            <div class="new8">
+                <img style="width: 270px; height: 270px;" src="../EX/Ex08/img/new_08.jpg">
+                <div class="new8-1">
+                    <span class="title">맞춤제작(풍경)</span><br>
+                    <span class="content">원하는 사이즈로 제작 가능</span><br>
+                    <span class="price">20,000원</span><br>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer> <!-- 하단 --> 
+        <div class="footer1">
+            회사소개 <span class="block" style="letter-spacing: 1em;">1</span> 이용안내 <span class="block" style="letter-spacing: 1em;">1</span> 장바구니 
+            <span class="block" style="letter-spacing: 1em;">1</span> 주문조회 <span class="block" style="letter-spacing: 1em;">1</span> 적립금 
+            <span class="block" style="letter-spacing: 1em;">1</span> 이용약관 <span class="block" style="letter-spacing: 1em;">1</span> 개인정보보호정책 
+            <span class="block" style="letter-spacing: 1em;">1</span> 고객센터
+        </div>
+        <div class="footer2">
+            <img style="margin-top: 80px;" src="../EX/Ex08/img/footer_logo.gif">
+            <img style="margin-left: 20px; margin-top: 55px;" src="../EX/Ex08/img/address.gif">
+            <img style="margin-left: 120px; margin-top: 75px;" src="../EX/Ex08/img/footer_banner_01.gif">
+        </div>
+    </footer>
+</body>
+</html>

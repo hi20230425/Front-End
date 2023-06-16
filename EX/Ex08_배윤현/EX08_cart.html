@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="EX08_cart.css">
+    <link rel="stylesheet" type="text/css" href="EX08_detail_css.css">
+    <link rel="stylesheet" type="text/css" href="Ex08_main.css">
+    <link rel="stylesheet" type="text/css" href="EX08_css.css">
+
+</head>
+
+<body>
+    <header>
+        <section id="top">
+            <a id="logo" href="EX08_index.html"><img src="img/logo.jpg"></a>
+            <div id="search">
+                <div id="search_title">SEARCH</div>
+                <div id="search_form"><input type="text"></div>
+                <div id="search_button"><img src="img/btn_search.gif"></div>
+            </div>
+            <nav id="top_menu">
+                <ul>
+                    <li class="green"><a href="#">로그인</a></li>
+                    <li class="green"><a href="#">회원가입</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </section>
+        <nav id="main_menu">
+            <ul>
+                <li><a href="detail.html">상세 페이지</a></li>
+                <li><a href="detail.html">장바구니</a></li>
+                <li><a href="#">고객 갤러리</a></li>
+                <li><a href="#">주문배송</a></li>
+                <li><a href="#">자주 하는 질문</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="right">
+        <h2 id="cart_title">
+            <span>SHOPPING CART</span> 장바구니
+        </h2>
+        <div id="process">
+            <img src="img/process.png">
+        </div>
+        <table>
+            <tr class="title">
+                <th>선택</th>
+                <th>상품명</th>
+                <th>판매가</th>
+                <th>수량</th>
+                <th>적립금</th>
+                <th>배송비</th>
+                <th>합계</th>
+            </tr>
+            <tr class="items">
+                <td class="col1"><input type="checkbox"></td>
+                <td class="col2">
+                    sjdy-005 펄실크 벽지/가로 125cm x 세로 90cm
+                </td>
+                <td class="col3">19,000원</td>
+                <td class="col4">
+                    <input type="checkbox">
+                    <button>수정</button>
+                </td>
+                <td class="col5">100원</td>
+                <td class="col6">3000원</td>
+                <td class="col7">22000원</td>
+            </tr>
+            <tr class="items">
+                <td class="col1"><input type="checkbox"></td>
+                <td class="col2">
+                    sjdy-005 펄실크 벽지 가로 125cm x 세로 90cm
+                </td>
+                <td class="col3">19,000원</td>
+                <td class="col4">
+                    <input type="checkbox">
+                    <button>수정</button>
+                </td>
+                <td class="col5">100원</td>
+                <td class="col6">3000원</td>
+                <td class="col7">22000원</td>
+            </tr>
+            <tr class="total_price">
+                <td colspan="7">
+                    [상품 구매 금액]: 19,000 + [배송비]: 3000 = [총구매액]: <span>22,000원</span>
+                </td>
+            </tr>
+            <tr class="order_status_box">
+                <td colspan="7">
+                    <div class="order_status">
+                        <p><span>고객님의 총 주문 합계 금액입니다</span></p>
+                        <div>
+                            <ul>
+                                <li class="col1">[상품 구매 금액]</li>
+                                <li class="col2">19,000원</li>
+                            </ul>
+                            <ul>
+                                <li class="col1">배송비:</li>
+                                <li class="col2">3000원</li>
+                            </ul>
+                            <ul>
+                                <li class="col1"><span>총 주문 합계 금액</span></li>
+                                <li class="col2"><span>21,000원</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            
+        </table>
+        <ul id="order_buttons">
+            <li><img src="img/order_button1.gif"></li>
+            <li><img src="img/order_button2.gif"></li>
+            <li><img src="img/order_button3.gif"></li>
+            <li><img src="img/order_button4.gif"></li>
+            <li><img src="img/order_button5.gif"></li>
+            <li><img src="img/order_button6.gif"></li>
+        </ul>
+    </section>
+
+</body>
+
+</html>

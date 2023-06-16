@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <style>
+        body {
+            width: 1500px;
+            height: 1230px;
+            margin: 0 auto;
+            background-color: rgb(242, 240, 240);
+        }
+        img {
+            float: left;
+        }
+        .top_menu { /* 상단 메뉴 */
+            height: 45px;
+            text-align: center;
+            line-height: 45px;
+            background-color: rgb(92, 92, 92);
+            color: rgb(228, 228, 228);
+            
+        }
+        .block { /* 상단 메뉴 간격 만들기 */
+            color: rgba(255, 255, 255, 0);
+        }
+        .category {
+            margin-top: 20px;
+            margin-left: 110px;
+            float: left;
+            width: 280px;
+            height: 405px;
+        }
+        .category_item {
+            color: rgb(231, 231, 231);
+            background-color: rgb(157, 199, 60);
+            text-align: center;
+            width: 255px;
+            height: 45px;
+            font-size: 14px;
+            font-weight: bold;
+            border: 1px solid rgb(204, 204, 204);
+            border-top: none;
+        }
+        .category_menu {
+            text-align: right 5px;
+            height: 36.5px;
+            font-size: 14px;
+            color: rgb(109, 109, 109);
+            font-weight: 600;
+            border: 1px solid rgb(204, 204, 204);
+            border-top: none;
+        }
+        .tel { /* 카테고리 밑에 배너 */
+            border: 1px solid rgb(204, 204, 204);
+            margin-left: 130px;
+            position: absolute;
+            top: 590px;
+        }
+        .point_line { /* 상품 제목 */
+            border-bottom: 2px solid rgb(82, 82, 82);
+            padding-bottom: 5px;
+            width: 970px;
+        }
+        .shopping_cart {
+            border: 1px solid red;
+            float: left;
+            margin: 30px;
+            font-size: 20px;
+            width: 970px;
+            height: 660px;
+        }
+        .cart_table {
+            border-collapse: collapse;
+            border: 1px solid red;
+            float: left;
+            width: 970px;
+            height: 450px;
+        }
+        .first, .two, .three, .four, .five {
+            border: 1px solid red;
+        }
+        .bottom_menu { /* 하단 메뉴 */
+            height: 45px;
+            text-align: center;
+            line-height: 45px;
+            background-color: rgb(92, 92, 92);
+            color: rgb(228, 228, 228);
+        }
+    </style>
+</head>
+<body>
+    <!-- 상단 -->
+    <header style="border: 1px solid rgba(0, 0, 255, 0);  height: 100px;">
+        <div class="logo">
+            <img style="width: 250px; margin-top: 30px; margin-left: 100px;" src="../EX/Ex08/img/logo.gif">
+        </div>
+        <div style="margin-top: 40px; margin-left: 530px;">
+            <span style="color: rgb(171, 203, 95);">SEARCH</span><span> &nbsp; _______________</span>
+            <img style="width: 25px; float: none;" src="../EX/Ex08/img/btn_search.gif">
+            <span class="block" style="letter-spacing: 13em;">1</span>
+            <span style="color: rgb(171, 203, 95);">로그인 &emsp; 회원가입</span><span style="color: rgb(126, 126, 126)"> &emsp; 마이페이지 &emsp; 이용안내 &emsp; 고객센터</span>
+    </header>
+    <nav>
+        <div class="top_menu">
+            상세 페이지 <span class="block" style="letter-spacing: 8em;">1</span> 장바구니 <span class="block" style="letter-spacing: 8em;">1</span> 고객 갤러리 <span class="block" style="letter-spacing: 8em;">1</span> 주문배송 <span class="block" style="letter-spacing: 8em;">1</span> 자주 하는 질문
+        </div>
+    </nav>
+    <!-- 중간 -->
+    <main>
+        <div class="category"> <!-- 카테고리 -->
+            <table style="margin-left: 20px; border-collapse: collapse;">
+                <tr>
+                    <td class="category_item">CATEGORY ITEM</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;생활 아트</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;캔버스 아트</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;사진 벽지</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;창문형/현관문형</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;포인트 벽지</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;세계지도</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;어린이방 세계지도</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;족자형 롤스크린</td>
+                </tr>
+                <tr>
+                    <td class="category_menu">&emsp;&emsp;&emsp;맞춤제작 결재창</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tel"> <!-- 카테고리 하단 배너 -->
+            <img style="width: 256px; height: auto;" src="../EX/Ex08/img/customer.png">
+         </div>
+         <div class="shopping_cart">
+            <div class="point_line">
+                <span style="color: rgb(171, 203, 95); font-weight: bold;">SHOPPING CART </span><span> 장바구니</span>
+            </div>
+            <div>
+                <img style="width: auto; height: 67px; margin-left: 30px; margin-top: 10px;" src="../EX/Ex08/img/process.png">
+            </div>
+            <div>
+                <table class="cart_table">
+                    <tr>
+                        <td style="width: 70px; height: 80px;" class="first">선택</td>
+                        <td  class="first">상품명</td>
+                        <td style="width: 100px" class="first">판매가</td>
+                        <td style="width: 100px" class="first">수량</td>
+                        <td style="width: 100px" class="first">적립금</td>
+                        <td style="width: 100px" class="first" colspan="2">배송비</td>
+                        <td style="width: 10px" class="first"></td>
+                        <td style="width: 110px" class="first" colspan="2">합계</td>
+                        <td style="width: 40px" class="first"></td>
+                    </tr>
+                    <tr>
+                        <td style="height: 120px;" class="two"><label><input type="checkbox" name="select" value="select"></label> </td>
+                        <td class="two"></td>
+                        <td class="two"></td>
+                        <td class="two"><input type="checkbox" name="select" value="select"><button>수정</button></td>
+                        <td class="two"></td>
+                        <td class="two" colspan="2"></td>
+                        <td class="two" colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td style="height: 120px;" class="three"><label><input type="checkbox" name="volume" value="volume"></td>
+                        <td class="three"></td>
+                        <td class="three"></td>
+                        <td class="three"><input type="checkbox" name="volume" value="volumet"><button>수정</button></td>
+                        <td class="three"></td>
+                        <td class="three" colspan="2"></td>
+                        <td class="three" colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td style="height: 65px; text-align: right; font-size: 18px;" class="four" colspan="9">[상품 구매 금액] : 19,000 + [배송비] : 3,000 = [총구매액] : <span style="font-weight: bold;">22,000원&emsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td style="height: 147px;" class="five" colspan="2">고객님의 총 주문 합계 금액입니다</td>
+                        <td style="text-align: right; width: 70px;" class="five" colspan="5">
+                            [상품 구매 금액]:<br>
+                            배송비:<br>
+                            총 주문 합계 금액<br>
+                        </td>
+                            <td style="text-align: right;" class="five" colspan="2">
+                                19,000원<br>
+                                3,000원<br>
+                                21,000원<br>
+                            </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </main>
+    <!-- 하단 -->
+    <footer style="margin-top: 850px;">
+        <div class="bottom_menu">
+            회사소개 <span class="block" style="letter-spacing: 1em;">1</span> 이용안내 <span class="block" style="letter-spacing: 1em;">1</span> 장바구니 <span class="block" style="letter-spacing: 1em;">1</span> 주문조회 <span class="block" style="letter-spacing: 1em;">1</span> 적립금 <span class="block" style="letter-spacing: 1em;">1</span> 이용약관 <span class="block" style="letter-spacing: 1em;">1</span> 개인정보보호정책 <span class="block" style="letter-spacing: 1em;">1</span> 고객센터
+        </div>
+        <div class="end">
+            <img style="width: 250px; height: auto; margin-top: 60px; margin-left: 100px;" src="../EX/Ex08/img/footer_logo.gif">
+            <img style="width: auto; height: 110px; margin-top: 30px; margin-left: 30px;" src="../EX/Ex08/img/address.gif">
+            <img style="width: 200px; height: auto; margin-top: 60px; margin-left: 100px;" src="../EX/Ex08/img/footer_banner_01.gif">
+        </div>
+    </footer>
+</body>
+</html>

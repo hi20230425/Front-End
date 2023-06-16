@@ -1,0 +1,564 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.clear {clear: both;}
+
+/* 600px 미만*/
+[class*="c"] {
+    float: left;
+
+    width: 100%;
+
+    padding: 10px;
+}
+
+/* 600 ~ 1024 */
+@media only screen and (min-width : 1024px) {
+    .c_m_1 {
+        width: 8.33%;
+        float: left;
+        padding: 15px;
+    }
+
+    .c_m_2 {
+        width: 16.66%;
+        float: left;
+        padding: 15px;
+    }
+
+    .c_m_3 {
+        width: 25.00%;
+        float: left;
+        padding: 15px;
+    }
+
+    /*  */
+    .c_m_4 {
+        width: 33.33%;
+        float: left;
+        padding: 15px;
+    }
+
+    .c_m_5 {
+        width: 41.66%;
+        float: left;
+        padding: 15px;
+    }
+
+    .c_m_6 {
+        width: 50.00%;
+        float: left;
+        padding: 15px;
+    }
+
+    /*  */
+    .c_m_7 {
+        width: 58.33%;
+        float: left;
+        padding: 15px;
+    }
+
+    .c_m_8 {
+        width: 66.66%;
+        float: left;
+        padding: 15px;
+    }
+
+    .c_m_9 {
+        width: 75.00%;
+        float: left;
+        padding: 15px;
+    }
+
+    /*  */
+    .c_m_10 {
+        width: 83.33%;
+        float: left;
+        padding: 15px;
+    }
+
+    .c_m_11 {
+        width: 91.66%;
+        float: left;
+        padding: 15px;
+    }
+
+    .c_m_12 {
+        width: 100%;
+        float: left;
+        padding: 15px;
+    }
+
+}
+
+@media only screen and (min-width : 1024px) {
+
+    .c1 {
+        width: 8.33%;
+        float: left;
+        padding: 15px;
+    }
+
+    .c2 {
+        width: 16.66%;
+        float: left;
+        padding: 15px;
+    }
+
+    .c3 {
+        width: 25.00%;
+        float: left;
+        padding: 15px;
+    }
+
+    /*  */
+    .c4 {
+        width: 33.33%;
+        float: left;
+        padding: 15px;
+    }
+
+    .c5 {
+        width: 41.66%;
+        float: left;
+        padding: 15px;
+    }
+
+    .c6 {
+        width: 50.00%;
+        float: left;
+        padding: 15px;
+    }
+
+    /*  */
+    .c7 {
+        width: 58.33%;
+        float: left;
+        padding: 15px;
+    }
+
+    .c8 {
+        width: 66.66%;
+        float: left;
+        padding: 15px;
+    }
+
+    .c9 {
+        width: 75.00%;
+        float: left;
+        padding: 15px;
+    }
+
+    /*  */
+    .c10 {
+        width: 83.33%;
+        float: left;
+        padding: 15px;
+    }
+
+    .c11 {
+        width: 91.66%;
+        float: left;
+        padding: 15px;
+    }
+
+    .c12 {
+        width: 100%;
+        float: left;
+        padding: 15px;
+    }
+}
+
+/* 영역 확인용 */
+/* header,
+nav,
+main,
+aside {
+    border: 1px dotted red;
+}
+
+article {
+    border: 1px dotted blue;
+}
+
+section {
+    border: 1px dotted green;
+} */
+
+/* 영역 확인 끝 */
+
+body {
+    background-color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 헤더 시작 */
+
+header div.search {
+    text-align: center;
+}
+
+header div.search span#search_text {
+    color: green;
+    font-size: 20px;
+    font-weight: 500 bolder;
+}
+
+header div.search input#search_input {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: whitesmoke;
+}
+
+header nav.top_menu ul {
+    list-style: none;
+}
+
+header nav.top_menu li {
+    display: inline-block;
+    margin: 5px;
+
+    font-size: 12px;
+}
+
+/* 헤더 끝 */
+
+/* nav 메인 메뉴 시작 */
+nav.main_menu {
+    background-color: #363636;
+    text-align: center;
+}
+
+nav.main_menu a {
+    display: inline-block;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* nav 메인 메뉴 끝 */
+
+/* 메인 시작 */
+main aside.category_menu {
+    margin-top: 15px;
+    padding: 0px;
+}
+
+main aside.category_menu div#top {
+    color: white;
+    background-color: #81c147;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main aside.category_menu ul {
+    list-style: none;
+    background-color: whitesmoke;
+}
+
+main aside.category_menu li {
+    margin: 10px;
+    margin-top: 15px;
+    border-bottom: 1px solid gray;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+main div.main_banner {
+    padding-left: 0px;
+}
+
+main div.main_banner img {
+    width: 100%;
+    height: 100%;
+    min-height: 470px;
+    max-height: 470px;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+main article.notice {
+    position: relative;
+    overflow: auto;
+}
+
+main article.notice ul {
+    color: aquamarine;
+    position: absolute;
+
+    top: 25%;
+    margin-left: 10%;
+}
+
+main article.notice li {
+    font-size: medium;
+}
+
+main article.notice img#out_img {
+    width: 100%;
+    height: 100%;
+
+    min-height: 200px;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+main article.week_event {
+    position: relative;
+}
+
+main article.week_event img {
+    width: 100%;
+    height: 300px;
+}
+
+main article.week_event img#in_img {
+    width: 80%;
+    height: 60%;
+
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+main section.special_shop {
+    padding-left: 0px;
+    padding-right: 2px;
+
+    position: relative;
+}
+
+main section.special_shop img#img_out {
+    width: 100%;
+}
+
+main section.special_shop img#img_in01, img#img_in02{
+    margin: 5px;
+    border: 1px solid gray;
+    width: 45%;
+    height: 100%;
+}
+
+main section.special_shop ul {
+    list-style: none;
+    width: 100%;
+    margin-left: 25px;
+
+    position: absolute;
+    top: 15%;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+main article.landscape {
+    height: 200px;
+    position: relative;
+    padding: 0px;
+    padding-left: 5px;
+}
+
+main article.landscape img#out_img {
+    width: 100%;
+    height: 100%;
+}
+
+main article.landscape div#img_in_box {
+    position: absolute;
+    right: 3.5%;
+    top: 5%;
+
+    width: 62%;
+    height: 82%;
+
+    text-align: center;
+
+    overflow: auto;
+}
+
+main article.landscape div#img_in_box img {
+    width: 49%;
+    max-width: 200px;
+    height: 97%;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+main article.point_wallpaper {
+    height: 200px;
+    position: relative;
+    padding: 0px;
+    padding-left: 5px;
+}
+
+main article.point_wallpaper img#out_img {
+    width: 100%;
+    height: 100%;
+}
+
+main article.point_wallpaper div#img_in_box {
+    position: absolute;
+    right: 3.5%;
+    top: 5%;
+
+    width: 62%;
+    height: 82%;
+
+    text-align: center;
+
+    overflow: auto;
+}
+
+main article.point_wallpaper div#img_in_box img {
+    width: 49%;
+    max-width: 200px;
+    height: 97%;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+main article.children {
+    height: 200px;
+    position: relative;
+    padding: 0px;
+    padding-left: 5px;
+}
+
+main article.children img#out_img {
+    width: 100%;
+    height: 100%;
+}
+
+main article.children div#img_in_box {
+    position: absolute;
+    right: 3.5%;
+    top: 5%;
+
+    width: 62%;
+    height: 82%;
+
+    text-align: center;
+
+    overflow: auto;
+}
+
+main article.children div#img_in_box img {
+    width: 49%;
+    max-width: 200px;
+    height: 97%;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+main section.new_shop hr#hr1 {
+    height: 3px;
+    background-color: green;
+
+    margin-bottom: 20px;
+}
+
+main section.new_shop span#f1 {
+    color: green;
+    font-weight: bolder;
+}
+
+main section.new_shop span#f2 {
+    font-weight: bolder;
+}
+
+main section.new_shop article {
+    margin: 25px;
+    width: 20%;
+
+    text-align: center;
+
+    display: inline-block;
+}
+
+main section.new_shop article img {
+    width: 100%;
+    height: 100%;
+}
+
+main section.new_shop div#text_case {
+    width: 100%;
+    display: block;
+}
+
+main section.new_shop article div > p1, p2, p3 {
+    font-size: smaller;
+}
+
+main section.new_shop article div > p1 {
+    color: green;
+}
+
+main section.new_shop article div > p2 {
+    color: gray;
+}
+
+main section.new_shop article div > p3 {
+    font-weight: bolder;
+}
+/* 메인 끝 */
+
+/* nav bottom 시작 */
+nav.bottom_menu {
+    background-color: #363636;
+    text-align: center;
+}
+
+nav.bottom_menu a {
+    display: inline-block;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* nav bottom 끝 */
+
+/* footer 시작 */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img, footer div{
+    float: left;
+}
+
+footer img {
+    margin-left: 80px;
+    margin-right: 30px;
+}
+/* footer 끝 */

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* {
+            margin: 0;
+            padding: 0;
+           
+
+            box-sizing: border-box;
+            
+        }
+
+        body{
+            font-size: 12px;
+            font-family: "맑은 고딕";
+            color: black;
+            background-color: #F2F2F2;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+
+        .clear{
+            clear:both
+        }
+
+        header{
+            height: 150px         
+        }
+
+        .headtop{
+            width: 90%;
+            margin: auto;
+        }
+
+        .logo {
+            float: left;
+            margin: 30px;
+        }
+
+        .search{
+            margin-top: 50px;
+            float: left;
+        }
+      
+        .topmanu{
+            float: right;
+            margin-top: 50px;
+        }
+
+        .manugreen{
+            color: green;
+        }
+
+        .topmanu li{
+            display: inline;
+            margin-left: 10px;
+        }
+
+        .mainmanu{
+            height: 50px;
+            margin-top: 20px;
+            background-color: gray;
+            color: white;
+        }
+
+        .mainmanu ul{
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            padding-top: 13px;
+        }
+
+        .mainmanu li{
+            display: inline;
+            margin-right: 70px;
+        }
+
+        .mainmanu a:visited{
+            color: white;
+        }
+
+        .mainmanu a:link{
+            color: white;
+        }
+
+
+
+
+
+        
+        .main1{
+            width: 1050px;
+            margin: auto;
+
+        }
+
+        .main1_1{
+            width: 250px;
+            float: left;
+            margin-top: 35px;
+            font-weight: bold;
+        }
+
+        .catgreen{
+            padding: 15px;
+            background-color: green;
+            color: white;
+            text-align: center;
+        }
+
+        .main1_1 li{
+            
+            padding: 10px 0 10px 30px;
+            border-bottom: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        }
+
+        .call{
+            width: 250px;
+            height: 120px;
+            margin-top: 30px;
+            border: 1px solid black;
+        }
+
+        .call img {
+            width: 248px;
+            height: 118px;
+        }
+
+
+        .right_side{
+            width: 780px;
+            float: right;
+            margin-top: 35px;
+        }
+
+
+        .cart_title{
+            padding: 0 0 5px 0;
+            border-bottom: 1px solid black;
+        }
+
+        .cart_title span{
+            color: green;
+        }
+
+        .process{
+            margin: 15px 0 0 10px;
+        }
+
+        table{
+            width: 800px;
+            margin: 100px 0 0 5px;
+            border-collapse: collapse;
+            border: 2px solid black;
+            border-top: 3px solid green;
+        }
+
+        .title{
+            height: 50px;
+            background-color: gray;
+        }
+
+        th{
+            padding: 10px;
+            border-bottom: 2px solid black;
+
+        }
+
+        .items{
+            height: 80px;
+            border-bottom: 2px solid black;
+        }
+
+
+        .td{
+            padding: 5px;
+            border-bottom: 2px solid black;
+        }
+
+        .col1{
+            width: 50px;
+            text-align: center;
+        }
+
+        .col2{
+            width: 60px;
+            text-align: center;
+        }
+
+        .col3{
+            width: 60px;
+            text-align: center;
+        }
+
+        .col4{
+            width: 80px;
+            text-align: center;
+        }
+        .col5{
+            width: 80px;
+            text-align: center;
+        }
+        .col6{
+            width: 80px;
+            text-align: center;
+        }
+        .col7{
+            width: 80px;
+            text-align: center;
+        }
+
+        .total_price{
+            height: 25px;
+        }
+
+        .total_price td{
+            text-align: right;
+            padding: 10px;
+        }
+
+        .order_box{
+            height: 100px;
+            background-color: gray;
+            border-top: 2px solid black;
+        }
+
+        .order_box td{
+            vertical-align: top;
+        }
+
+        .order_stat{
+            position: relative;
+        }
+
+        .order_stat p{
+            position: absolute;
+            top: 40px;
+            left: 20px;
+        }
+
+        .order_stat div{
+            position: absolute;
+            top: 20px;
+            left: 480px;
+
+        }
+
+        .order_stat li {
+            display: inline;
+            margin: 2px 0;
+        }
+
+        .col1{
+            width: 150px;
+            text-align: right;
+        }
+
+        .col2{
+            width: 80px;
+            text-align: right;
+        }
+
+        table span {
+            font-weight: bold;
+        }
+
+        .order_button{
+            margin: 20px 0 0 0;
+            text-align: center;
+        }
+
+        .order_button li{
+            display: inline;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+            height: 200px;
+            margin-top: 1200px;
+            
+        }
+
+        .bottom_manu{
+            height: 50px;
+            background-color: gray;
+        }
+
+        .manu_nav{
+            
+            width: 90%;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        .manu_nav ul{
+            margin-left: 200px;
+        }
+
+        .manu_nav li{
+            display: inline;
+            margin-left: 100px;
+            color: white;
+        }
+
+        .manu_nav a:link{
+            color: white;
+        }
+
+        .manu_nav a:visited{
+            color: white;
+        }
+
+        .bottom{
+            width: 90%;
+            margin: auto;
+        }
+
+        .bottom div{
+            float: left;
+        }
+
+        .bottom_logo{
+            margin: 50px 0 0 200px;
+        }
+
+        .bottom_add{
+            margin: 25px 0 0 200px;
+        }
+
+        .bottom_logo2{
+            margin: 50px 0 0 200px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <section class="headtop">
+        <a href="../Ex08/index.html"><img class="logo" src="/EX/Ex08/img/logo.gif"></a>
+        <span class="search"> SEARCH _________ <img src="/EX/Ex08/img/btn_search.gif"></span>
+    
+        <nav class="topmanu">
+        <ul>
+            <li class="manugreen"> 로그인 </li>
+            <li class="manugreen"> 회원가입 </li>
+            <li> 마이페이지 </li>
+            <li> 이용안내 </li>
+            <li> 고객센터 </li>
+            
+        </ul>    
+    </nav>
+    <div class="clear"></div>
+    </section>
+    
+    <nav class="mainmanu">
+        <ul>
+            <li><a href="/EX/Ex08/detail.html"> 상세 페이지 </a></li>
+            <li><a href="/EX/Ex08/cart.html"> 장바구니 </a></li>
+            <li> 고객 갤러리 </li>
+            <li> 주문배송 </li>
+            <li> 자주 하는 질문 </li>
+        </ul>
+    </nav>
+    </header>
+
+
+    <main class="main1">
+        <section class="main1_1">
+            <div class="catgreen">CATEGORY ITEM</div>         
+        
+           <ul>
+                
+                <li> 생활 아트 </li>
+                <li> 캔버스 아트 </li>
+                <li> 사진 벽지 </li>
+                <li> 창문형/현관문형 </li>
+                <li> 포인트 벽지 </li>
+                <li> 세계지도 </li>
+                <li> 앤티크 세계지도 벽지 </li>
+                <li> 입체 세계지도 벽지 </li>
+                <li> 어린이방 세계지도 </li>
+                <li> 족자형 롤스크린 </li>
+                <li> 맞춤제작 결제창 </li>
+            </ul> 
+
+            <div class="call">
+                <img src="../Ex08/img/customer.png">
+    
+            </div>
+        </section>
+
+        <section class="right_side">
+            <h2 class="cart_title">
+                <span>SHOPPING CART</span> 장바구니
+            </h2>
+            <div class="progress">
+                <img src="../Ex08/img/process.png">
+            </div>
+
+            <table>
+                <tr class="title">
+                    <th>선택</th>
+                    <th>상품명</th>
+                    <th>판매가</th>
+                    <th>수량</th>
+                    <th>적립금</th>
+                    <th>배송비</th>
+                    <th>합계</th>
+                </tr>
+                <tr class="items">
+                    <td class="col1"><input type="checkbox"></td>
+                    <td class="col2">
+                        sjdy-005 펄실크 벽지/가로 125cm X 세로 90cm
+                    </td>
+                    <td class="col3">
+                        19,000원
+                    </td>
+
+                    <td class="col4">
+                        <input type="checkbox">
+                        <button>수정</button>
+                    </td>
+                    
+                    <td class="col5">100원</td>
+                    <td class="col6">3,000원</td>
+                    <td class="col7">22,000원</td>
+                </tr>
+
+                <tr class="items">
+                    <td class="col1"><input type="checkbox"></td>
+                    <td class="col2">
+                        sjdy-005 펄실크 벽지/가로 125cm X 세로 90cm
+                    </td>
+                    <td class="col3">
+                        19,000원
+                    </td>
+
+                    <td class="col4">
+                        <input type="checkbox">
+                        <button>수정</button>
+                    </td>
+                    
+                    <td class="col5">100원</td>
+                    <td class="col6">3,000원</td>
+                    <td class="col7">22,000원</td>
+                </tr>
+
+                <tr class="total_price">
+                    <td colspan="7">
+                        [상품 구매 금액] : 19,000 + [배송비] : 3,000 = [총구매액] : <span>22,000원</span>
+                    </td>
+                </tr>
+
+                <tr class="order_box">
+                    <td colspan="7">
+                        <div class="order_stat">
+                            <p><span>고객님의 총 주문 합계 금액입니다.</span></p>
+                            <div>
+                            <ul>
+                                <li class="col1">[상품 구매 금액] : </li>
+                                <li class="col2">19,000원</li>
+                            </ul>
+    
+                            <ul>
+                                <li class="col1">배송비 : </li>
+                                <li class="col2">3,000원</li>
+                            </ul>
+    
+                            <ul>
+                                <li class="col1"><span>총 주문 합계 금액</span></li>
+                                <li class="col2"><span>21,000원</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </td>
+                </tr>
+                
+            </table>
+            <ul class="order_button">
+                <li><img src="../Ex08/img/order_button1.gif"></li>
+                <li><img src="../Ex08/img/order_button2.gif"></li>
+                <li><img src="../Ex08/img/order_button3.gif"></li>
+                <li><img src="../Ex08/img/order_button4.gif"></li>
+                <li><img src="../Ex08/img/order_button5.gif"></li>
+                <li><img src="../Ex08/img/order_button6.gif"></li>
+                
+            </ul>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+<footer>
+
+    <section class="bottom_manu">
+        <nav class="manu_nav">
+            <ul>
+                <li>회사소개</li>
+                <li>이용안내</li>
+                <li><a href="../Ex08/cart.html">장바구니</a></li>
+                <li>주문조회</li>
+                <li>적립금</li>
+                <li>이용약관</li>
+                <li>개인정보보호정책</li>
+                <li>고객센터</li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="bottom">
+        <div class="bottom_logo">
+            <img src="../Ex08/img/footer_logo.gif">
+        </div>
+        <div class="bottom_add">
+            <img src="../Ex08/img/address.gif">
+        </div>
+        <div class="bottom_logo2">
+            <img src="../Ex08/img/footer_banner_01.gif">
+        </div>
+    </section>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

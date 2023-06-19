@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        //head 블락내에서 많이 생성
+        // document.write <== body 에서 출력  
+        function printMsg ( name, age ) {
+            document.write ("학생 이름 : <b> " + name + "<b> <br />"); 
+            document.write ("학생 나이 : <b> " + age + "<b> <br />"); 
+        }
+
+        // console.log    <== 콘솔에 출력 :   변수의 값을 디버깅시 
+        function printMsg2 ( name, age ) {
+            console.log ("학생 이름 :  " + name ); 
+            console.log ("학생 나이 :  " + age  ); 
+        }
+
+        //alert : 경고창을 띄움
+        function printMsg3 ( name, age ) {
+            alert ("학생 이름 :  " + name ); 
+            alert ("학생 나이 :  " + age ); 
+        }
+    
+    </script>
+
+</head>
+<body>
+
+    <!-- 
+        body 의 앨리맨트 이벤트에 따라서 함수 호출 
+
+    -->
+    <h3> body 에 출력 : document.write</h3>
+    <hr>
+    <button type="button" onclick="printMsg('홍길동', 21)" > 학생정보 출력 </button>
+
+    <a href = "#" onmouseover="printMsg('이순신', 50)">   학생 정보 출력 </a>
+
+    <br> <br> 
+
+    <h3> 콘솔에 출력 : cosole.log</h3>
+    <hr> 
+    <div style="background-color: aqua; width:30%;" ondblclick="printMsg2('세종대왕', 50)"> 
+        더블 클릭시 출력 : 콘솔에 출력 </div>
+
+
+    <h3 > 경고창을 띄워서 출력 : alert</h3>
+    <hr> 
+        <div style = "width:500px; height:500px; margin:auto ;" ondblclick="printMsg3('신사임당', 30)">
+             <img src = "img/pic1.jpg" width="100%" height="100%"> 
+        </div>
+
+    
+</body>
+</html>

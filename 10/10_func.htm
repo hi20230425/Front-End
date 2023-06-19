@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        function add () {
+            document.write ("첫번째 아규먼트 : " + arguments[0]); 
+            document.write ("두번째 아규먼트 : " + arguments[1]); 
+            document.write ("세번째 아규먼트 : " + arguments[2]); 
+
+            document.write ("<hr> "); 
+        }
+
+        add ( 2 ,3 ) ; 
+        add ( 2, 3, 4); 
+
+        document.write("<hr>")
+
+
+        function add2() {
+            var sum = 0 ; 
+
+            for (var  i = 0 ; i < arguments.length; i++) {
+                sum = sum + arguments[i] ; 
+            }
+
+            document.write ( "수행결과 : " + sum + "<br> ")
+
+        }
+
+        add2(2,3) ;       //5; 
+        add2(2,3,4);        //9 
+        add2(4,5,6,7,8);    //30
+        add2 (1,2,3,4,5,6,7,8,9,10) ;    //55
+
+
+    
+    </script>
+</head>
+<body>
+    <!-- 
+        매개변수로 많은값을 받을때 처리 하기  : arguments[i]  <== arguments객체 배열로 처리
+        
+    -->
+    
+    <input type = "button" value="클릭시 함수 호출(add)" onclick="add(11,22,33)"> 
+    <input type = "button" value="클릭스 함수호출 (add2)" onclick="add2(100,200,300,400)"> 
+</body>
+</html>

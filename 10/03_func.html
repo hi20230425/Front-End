@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //  주석 : 자바 스크립트 
+        /* 여러줄 추석 */ 
+
+        var text1 = "함수 선언전 호출";
+        var text2 = "함수 선언후 호출"; 
+
+
+       //함수 선언전 호출 
+       // printMsg(text1); 
+
+        //무명 함수 
+        var printMsg = function (msg) {
+            document.write ("함수 호출 메세지 : " + msg + "<br />"); 
+        }
+
+        //함수 선언후 호출 
+        printMsg(text2); 
+
+    </script>
+</head>
+<body>
+    <!--
+        무명 함수 : 이름이 없는 함수 , 객체형식의 함수 
+
+        var 변수명 = function (매개변수1, 매개변수2) {
+            실행코드 ; 
+        }
+
+        변수명 (인자1, 인자2);        
+                //무명함수 호출 : 무명함수는 선언전 호출을 하면 오류 발생됨 
+
+    -->
+    
+</body>
+</html>

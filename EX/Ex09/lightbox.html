@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .row {
+            width : 420px;
+            margin : 0 auto;    /* 박스자체가 중앙정렬 */  
+        }
+
+        .row li {
+            border: 1px solid red; 
+            /* float: left;  */
+            display : inline-table
+        }
+        .row ul {
+            list-style-type: none;
+            margin : 0 ; padding:0 ; 
+        }
+
+        #lightbox {
+            border : 1px solid red; 
+
+            position : fixed;            /* 스크롤과 상관없이 고정  */
+            width : 100%; 
+            height: 100%; 
+            background-color: rgba(0,0,0, 0.7);     /* 검은색 투명도 : 0.7 */ 
+
+            top : 0; 
+            left:0 ; 
+             /* 처음 로딩시 보이지 않도록 설정 */ 
+            display : none ;       
+        }
+
+        #lightbox img {
+            position : absolute ;    /* 부모 박스에 position 설정이 있을때 */ 
+            top : 50%; 
+            left: 50%; 
+            border : 5px solid white; 
+            transform: translate(-50%, -50%);
+        }
+
+    
+    </style>
+</head>
+<body>
+    <!-- 
+        함수, 배열을 이용해서 작은 이미지를 클릭시 원본이미지를 출력후 클릭시 사라짐. 
+
+        블락 태그는 기본 width : 100%   상위 부모에 대한, 출력이 아래로 출력 
+        인라인 태그는  컨텐츠에 맞게 width 지정 , 인 라인으로 출력  
+    -->
+
+    <!-- 작은 이미지 출력 부분 -->
+    <div class ="row">  
+        <ul>
+            <li> <img src = "images/tree-1-thumb.jpg" class ="pic"> </li>
+            <li> <img src = "images/tree-2-thumb.jpg" class ="pic"> </li>
+            <li> <img src = "images/tree-3-thumb.jpg" class ="pic"> </li>
+            <li> <img src = "images/tree-4-thumb.jpg" class ="pic"> </li>
+            <li> <img src = "images/tree-5-thumb.jpg" class ="pic"> </li>
+            <li> <img src = "images/tree-6-thumb.jpg" class ="pic"> </li>
+        </ul>
+    </div>
+
+    <!-- 큰이미지 출력 부분 :  기본 페이지 로드시 출력안됨 , 작은 이미지를 클릭시 출력 -->
+    <div id = "lightbox"> 
+        <img src = "images/tree-1.jpg"> 
+    </div>
+
+</body>
+</html>

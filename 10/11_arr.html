@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        //배열 변수 선언시 값 할당 
+        var city = ["Seoul", "Pusan" , "Incheon"]; 
+
+        //함수 호출시 배열에 저장된 값을 출력 
+        function printArr () {
+            for ( var i = 0 ; i < city.length; i++) {
+                document.write ("배열에 저장된 데이터 : " + city[i] + "<br>"); 
+            }
+        }
+    
+        printArr(); 
+
+        document.write ("<hr>")
+    </script>
+
+</head>
+<body>
+    <!--
+        자바에서는 배열에 동일한 자료형만 저장 가능 
+
+        배열 : 하나의 변수에 여러값을 할당.  방번호[index] 0 ~~
+            -- 자바스크립트는 다양한 자료형을 저장 할 수 있다. [정수, 문자열, 객체, 배열 ]
+          var 배열변수명 =   [ 값1 , 값2 , 값3 ]
+    -->
+
+<script> 
+    for ( i =0 ; i < city.length; i++) {
+        document.write ("배열에 저장된 데이터 : " + city[i] + "<br>"); 
+    }
+
+</script>
+
+    
+</body>
+</html>

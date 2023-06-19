@@ -11,7 +11,7 @@
         }
 
         .row li {
-            border: 1px solid red; 
+            /* border: 1px solid red;  */
             /* float: left;  */
             display : inline-table
         }
@@ -21,7 +21,7 @@
         }
 
         #lightbox {
-            border : 1px solid red; 
+            /* border : 1px solid red;  */
 
             position : fixed;            /* 스크롤과 상관없이 고정  */
             width : 100%; 
@@ -56,19 +56,51 @@
     <!-- 작은 이미지 출력 부분 -->
     <div class ="row">  
         <ul>
-            <li> <img src = "images/tree-1-thumb.jpg" class ="pic"> </li>
-            <li> <img src = "images/tree-2-thumb.jpg" class ="pic"> </li>
-            <li> <img src = "images/tree-3-thumb.jpg" class ="pic"> </li>
-            <li> <img src = "images/tree-4-thumb.jpg" class ="pic"> </li>
-            <li> <img src = "images/tree-5-thumb.jpg" class ="pic"> </li>
-            <li> <img src = "images/tree-6-thumb.jpg" class ="pic"> </li>
+            <li> <img src = "images/tree-1-thumb.jpg" data-src="images/tree-1.jpg" class ="pic"> </li>
+            <li> <img src = "images/tree-2-thumb.jpg" data-src="images/tree-2.jpg" class ="pic"> </li>
+            <li> <img src = "images/tree-3-thumb.jpg" data-src="images/tree-3.jpg" class ="pic"> </li>
+            <li> <img src = "images/tree-4-thumb.jpg" data-src="images/tree-4.jpg" class ="pic"> </li>
+            <li> <img src = "images/tree-5-thumb.jpg" data-src="images/tree-5.jpg" class ="pic"> </li>
+            <li> <img src = "images/tree-6-thumb.jpg" data-src="images/tree-6.jpg" class ="pic"> </li>
         </ul>
     </div>
 
     <!-- 큰이미지 출력 부분 :  기본 페이지 로드시 출력안됨 , 작은 이미지를 클릭시 출력 -->
     <div id = "lightbox"> 
-        <img src = "images/tree-1.jpg"> 
+        <img src = "images/tree-1.jpg" id = "lightboxImage"> 
     </div>
+
+
+    <script>
+        //자바 스크립트 처리 블락 
+            //엘리멘트의 class 이름을 불러와서 변수에 할당. : document.getElementByClassName("pic")
+
+        var pics = document.getElementsByClassName("pic"); 
+        var lightbox = document.getElementById("lightbox")
+        var lightboximage = document.getElementById("lightboxImage"); 
+
+        //for 문을 돌면서 작은 이미지 클릭시 함수 호출 
+        for ( var i = 0 ; i < pics.length; i++) {
+            pics[i].addEventListener("click", showLightbox); 
+        }
+
+
+        //작은미지를 클릭시 원본 이미지를 출력 하는 함수 
+        function showLightbox() {
+            var bigLocation = this.getAttribute("data-src");    //원본이미지 속성이 들어간 
+                                                                //bigLocation 변수에는 웝본 이미지 경로가 저장됨
+            lightboximage.setAttribute("src", bigLocation); 
+            lightbox.style.display="block";          /* display 속성을 none 에서 block으로 변경 : 화면에 출력 */ 
+        }
+
+        //원본 이미지를 클리시 원본이미지를 없애는 함수
+        lightbox.onclick = function () {
+            lightbox.style.display="none";
+        } 
+
+
+
+    </script>
 
 </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //원본의 데이터를 끄집어 내서 다른 배열에 저장 
+        var kdata = [ '서울', '부산', '구포', '대구', '대전']; 
+        var str1 = kdata.splice(1,2) ;  // 1 : 포함, 2 : 포함 
+
+        document.write(" str1 : " + str1 + "<p/>");         //부산,구포
+        document.write(" kdata : " + kdata + "<p/>");       //서울,대구,대전
+
+        //원본의 값을 삭제 후 추가함 
+        var str2 = kdata.splice(1, 1, '강릉', '세종') ;    // 
+
+        document.write ("삭제 데이터 : " + str2 + "<p/>");    //대구
+        document.write ("남은 배열 : " + kdata + "<p/>");      // 서울,강릉 ,세종 ,대전
+
+        // 특정 자리수에서 마지막까지 잘름. 
+        var str3 = kdata.splice(2, Number.MAX_VALUE); 
+
+        document.write ("삭제 데이터 : " + str3 + "<p/>" );   //세종 ,대전
+        document.write ("남은 데이터 : " + kdata + "<p/>" );  // 서울,강릉
+
+
+    
+    
+    </script>
+</head>
+<body>
+    <!--
+        splice : 배열의 원소를 추가 / 제거     
+            <== 원본의 변경사항이 적용이됨 
+    -->
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        var kdata = ['서울', '부산']; 
+        var p1 = kdata.unshift('청주', '세종');    // index 0 번방에 값을 추가
+
+        document.write("데이터 : " + p1 + "<p/>"); 
+        document.write("원본 데이터 : " + kdata + "<p/>");  //청주,세종,서울,부산
+
+        var p2 = kdata.shift();  //index 0 방의 값을 삭제후 삭제된 값을 리턴 
+        document.write("데이터 ; " + p2 + "<p/>");          //청주
+        document.write("원본 데이터 ; " + kdata + "<p/>");  //세종,서울,부산
+
+    </script>
+</head>
+<body>
+    <!--
+        shift   : 맨 처음의 방에  데이터를 삭제 후 삭제된 값을  리턴 
+        unshift : 맨 처음의 방에 데이터를 넣고 배열으 길이를 리턴 
+    -->
+    
+</body>
+</html>

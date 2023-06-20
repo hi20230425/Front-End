@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        var ndata1 = [19, 38, 67, 26, 55, 24, 53, 12, 31]; 
+        var ndata2 = [132, 2, 41, 123, 45, 1234, 6, 29, 4567]; 
+        var edata = ["Apple", "Html", "Game", "Computer", "Java"]; 
+        var kdata = ["서울", "부산", "구포", "대구", "인천"]; 
+
+        //
+        document.write( "수치 정렬 1 : " + ndata1.sort() + "<p/>");   //오름 차순 정렬 출력 
+        document.write( "수치 정렬 2 : " + ndata2.sort() + "<p/>");   //오름 차순 정렬 출력 
+
+        //sort() 메소드를 사용해서 (숫자가 적은것 ===> 많은것)  : 오름 차순 정렬 
+        document.write( "수치 정렬 3 : " + ndata2.sort(function (a,b) {return a-b}) + "<p/>");   //값이 적은것부터 출력 되도록 함수 사용  
+        //내림 차순 정렬 
+        document.write( "수치 정렬 4 : " + ndata2.sort(function (a,b) {return b-a}) + "<p/>");   
+        
+        
+        document.write( "문자 정렬 5 : " + edata.sort() + "<p/>");    
+        document.write( "문자 정렬 6 : " + kdata.sort() + "<p/>");    
+    
+    </script>
+</head>
+<body>
+    <!-- 
+        sort() : 배열에 저장된 값을 정렬(오름차순, 내림차순 ) 해서 출력 
+            --  숫자에서 사용되었을때 작은수부터 정렬되지 않는다. 
+            --    첫번째 자릿 수 부터 정렬되고 , 두번째 자릿수를 정렬 
+    -->
+    
+</body>
+</html>

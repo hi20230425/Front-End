@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        var city = new Array ( "서울" , "부산", "인천"); 
+
+        //city 가 배열인지를 확인후 배열이면 배열의 값을 출력 
+        function printArr() {
+            if (city instanceof Array) {
+                //city : 배열이면 실행
+                document.write("배열 객체가 생성되었습니다. <br> ") ; 
+                for ( var i = 0 ; i < city.length ; i++) {
+                    document.write( "배열의 데이터 : " + city[i] + "<br>"); 
+                }
+            }else {
+                //city : 배열이 아니면 실행
+                document.write ("배열이 아닙니다."); 
+            }
+        }
+
+        printArr(); 
+
+    
+    </script>
+</head>
+<body>
+    <!-- 
+        var city : 배열인것을 확인후 처리함. 
+
+    -->
+    
+</body>
+</html>

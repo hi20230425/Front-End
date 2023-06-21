@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        var data = [21, 42, 33, 14, 25, 12, 37, 28, 16, 11];    // 나이 
+
+        //18살 이상만 가져와서 새로운 배열에 저장 
+        //필터할 함수 생성 
+        function filterArr (value) {
+            return value >= 18;         // value 의 값이 18이상일때만 리턴  
+        }
+        
+        //필터를 적용해서 새로운 배열을 생성 
+        var fdata = data.filter(filterArr); 
+
+        //출력 
+        document.write("원본 데이터 : " + data + "<p/>");
+        document.write("필터 적용 데이터 : " + fdata + "<p/>");
+
+    
+    
+    </script>
+</head>
+<body>
+    <!--
+        filter : 배열이 데이터를 조건에 맞는 값 만 반환해서 새로운 배열을 생성 
+    -->
+</body>
+</html>

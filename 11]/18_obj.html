@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        // 글자 스타일을 변경 
+        function textstyle() {
+            document.getElementById("msg").style.color="blue"; 
+            document.getElementById("msg").style.fontSize="30px"; 
+            document.getElementById("msg").style.fontStyle="italic"; 
+        }
+        // 글자를 숨김
+        function texthidden() {
+
+            //visibility : hidden <== 자신의 자리를 유지 한체 앨리리먼트를 보이지 않도록 설정 
+            //display : none      <== 자신의 자리를 없애면서 보이지 않도록  
+            document.getElementById("msg").style.visibility="hidden"; 
+        }
+        // 글자를 보이도록 
+        function textshow() {
+            document.getElementById("msg").style.visibility="visible"; 
+        }
+
+    
+    
+    </script>
+
+</head>
+<body>
+
+    <p id = 'msg'> 문서 객체 스타일 변경하기 </p>
+
+    <input type="button" onclick="textstyle()" value ="텍스트 스타일 변경"> 
+    <input type="button" onclick="texthidden()" value ="텍스트 스타일 숨기기"> 
+    <input type="button" onclick="textshow()" value ="텍스트 스타일 보이기 "> 
+    
+</body>
+</html>

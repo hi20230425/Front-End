@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        function add() {
+            // img 앨리맨트 생성 
+            var img = document.createElement("img"); 
+
+            // 태그의 속성갑을 정의 : setAttribute() 
+            img.setAttribute("src", 'img/new_07.jpg'); 
+            img.width= 300; 
+            img.height= 300; 
+
+            //body 에 이미지를 추가함. 
+            document.body.appendChild(img); 
+        }
+    
+    </script>
+</head>
+<body>
+    <a href="#" onclick ="add()"> [이미지 추가] </a>
+    
+</body>
+</html>

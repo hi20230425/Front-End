@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id = "car"> </p>
+
+    <p> [Car1 속성] </p>
+    <p id = "car0"> </p>
+
+    <p> [Car2 속성] </p>
+    <p id = "car1"> </p>
+
+    <p> [Car3 속성] </p>
+    <p id = "car2"> </p>
+    
+    <script> 
+        //배열 생성 : 2차원 배열 : 행이 3개인 2차원 배열  
+        var car = new Array(
+            ['Sonata', 'blue', 100], 
+            ['Jeep', 'red', 70],
+            ['Passt', 'White', 150],
+        ); 
+
+        //car 
+        document.getElementById("car").innerHTML = "car[2][1] : " + car[2][1]; 
+
+        for ( var i = 0 ; i < car.length; i++) {
+            document.getElementById("car"+i).innerHTML= car[i]; 
+        }
+    
+    </script>
+    
+</body>
+</html>

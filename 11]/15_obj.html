@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        function add() {
+            //태그를 생성 : createElement ,  createTextNode : 글자를 담은 객체 
+            var header = document.createElement("h3"); 
+            var textNode = document.createTextNode("내 이름은 홍길동 입니다."); 
+
+            // h3태그 엘리맨트에 글자를 적용 : 
+            header.appendChild(textNode);   
+
+            //body 내에 출력 
+            document.body.appendChild(header); 
+
+        }
+    
+    </script>
+
+</head>
+<body>
+    <a hred = "#" onclick="add()"> 당신의 이름은 무엇 입니까?</a>
+    
+</body>
+</html>

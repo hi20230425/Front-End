@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        생성자를 사용해서 객체의 필드의 값 할당. 
+    -->
+    <p id = "carname"> </p>
+    <p id = "carcolor"> </p>
+    <p id = "carspeed"> </p>
+
+    <script> 
+        var car = new Object();       // 객체 생성 후 필드, 함수 생성 
+
+        //객체의 필드, 객체의 함수를 생성 
+        car.name = "Sonata"; 
+        car.speed = 100; 
+        car.color = "blue"; 
+        car.speedup = function () {
+            return this.speed + 10 ; 
+        }; 
+
+        // 필드의 값을 출력 
+        document.getElementById("carname").innerHTML = "자동차 이름 : " + car.name; 
+        document.getElementById("carcolor").innerHTML = "자동차 색깔 : " + car.color; 
+        document.getElementById("carspeed").innerHTML = "자동차 이름 : " + car.speedup(); 
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        배열 내부의 객체  : 
+            -- 하나의 배열 변수에 다양한 타입의 값이 들어올 수 있다. 
+            -- 문자열, 숫자, 실수, 배열, 객체 . 
+    -->
+
+    <p> [Car1] </p>
+    <p id="data10"> </p>
+    <p id="data20"> </p>
+    <p id="data30"> </p>
+
+    <p> [Car2] </p>
+    <p id="data11"> </p>
+    <p id="data21"> </p>
+    <p id="data31"> </p>
+
+    <p> [Car3] </p>
+    <p id="data12"> </p>
+    <p id="data22"> </p>
+    <p id="data32"> </p>
+
+    <script> 
+        //car 배열 : car[0], car[1], car[2]
+        var car = [ {name : "Sonata", color:"blue", speed:100}, 
+                    {name : "Jeep", color:"red", speed:70} ,
+                    {name : "Passt", color:"white", speed:150} ]; 
+    
+        /*
+        document.write (car[0].name + "<p/> "); 
+        document.write (car[1].name + "<p/> "); 
+        document.write (car[2].name + "<p/> "); 
+        */ 
+    
+        for ( var i = 0 ; i < car.length ; i ++  ){
+            document.getElementById("data1" + i ).innerHTML= "자동차 이름 : " + car[i].name; 
+            document.getElementById("data2" + i ).innerHTML= "자동차 색깔 : " + car[i].color; 
+            document.getElementById("data3" + i ).innerHTML= "자동차 속도 : " + car[i].speed; 
+        }
+    
+    </script>
+</body>
+</html>

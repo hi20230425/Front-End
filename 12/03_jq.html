@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "js/jquery-3.7.0.min.js"> </script>
+
+    <script>  
+        $(document).ready( function() {
+        //JQuery 코드 블락 
+           $("ans").hide();       // 정답은 로드시 숨김 
+           $("p.q1").click(function (){
+                $("ans.q1").show(); 
+           } ) ; 
+
+           $("p.q2").click( function(){
+                $("ans.q2").show(); 
+           }); 
+
+        });
+    </script>
+</head>
+<body>
+    <h2> 질문 1 : 대한 민국의 수도는 어디 입니까? </h2>
+    <p class="q1"> [정답 보기]</p>
+    <ans class = "q1"> 대한 민국의 수도는 <strong>서울</strong> 입니다. </ans>
+    
+    <h2> 질문 2 : 대한 민국의 국보 1호는 무엇입니까? </h2>
+    <p class="q2"> [정답 보기]</p>
+    <ans class = "q2"> 대한 민국의 1호는  <strong>남대문 입니다.</strong> 입니다. </ans>
+</body>
+</html>

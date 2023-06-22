@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "js/jquery-3.7.0.min.js"> </script>
+
+    <script>  
+        $(document).ready( function() {
+        //JQuery 코드 블락 
+            $("button.move").click(function() {
+                $("img").animate({
+                    width : '300px' ,
+                    height: '300px', 
+                    left : '350px'
+                });
+            }); 
+
+            $("button.init").click(function() {
+                $("img").animate({
+                    width : '130px' ,
+                    height: '100px', 
+                    left : '0px'
+                });
+            }); 
+
+
+        });
+    </script>
+</head>
+<body>
+    <button class="move"> 확대 </button>
+    <button class="init"> 축소 </button>
+    <p /> 
+    <img name="pic1" src="img/pic1.jpg" width="130px" height="100px" style="position:relative"> 
+    
+</body>
+</html>

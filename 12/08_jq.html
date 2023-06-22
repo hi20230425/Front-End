@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "js/jquery-3.7.0.min.js"> </script>
+
+    <script>  
+        $(document).ready( function() {
+        //JQuery 코드 블락 
+            $("button").click(function() {
+
+                $("h1 , h2 , div , p ").toggleClass("red"); 
+            }); 
+        });
+    </script>
+
+    <style> 
+        .red {
+            color : red; 
+            border : 1px solid blue;    
+        }
+    </style>
+
+</head>
+<body>
+    <h1> HTML1 </h1>
+    <h2> CSS3 </h2>
+    <p> 자바스크립트</p>
+    <div> 제이쿼리 </div> <br> 
+    <button> CSS 적용/해제 </button>
+
+
+    
+</body>
+</html>
